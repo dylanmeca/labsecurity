@@ -8,7 +8,7 @@ setuptools.setup(
     version="1.0",
     author="dylan14567",
     author_email="",
-    description="",
+    description="lab_tool is a system that allows you to do ethical hacking tests",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/dylan14567/lab_tool",
