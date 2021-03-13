@@ -5,5 +5,4 @@ from labtool.console import *
 
 init(autoreset=True)
 
-console = console ()
-console.terminal ()
+terminal ()
