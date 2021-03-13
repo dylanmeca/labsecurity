@@ -4,3 +4,6 @@ from colorama import init, Fore
 from lab-tool.console import *
 
 init(autoreset=True)
+
+console = console ()
+console.terminal ()
