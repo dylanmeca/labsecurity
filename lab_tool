@@ -2,3 +2,5 @@
 import os, sys, time, urllib.request, requests
 from colorama import init, Fore
 from lab-tool.console import *
+
+init(autoreset=True)
