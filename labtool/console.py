@@ -19,6 +19,8 @@ def terminal ():
                              global ip1
                              print (Fore.GREEN + "ip =>", prompt[2])
                              ip1 = prompt[2]
+               elif prompt[0] == 'exit' or prompt[0] == 'quit':
+                      break
                elif prompt[0] == 'run' or prompt[0] == 'exploit':
                       if ip1 == ip1:
                              target = requests.get(url=ip1)
