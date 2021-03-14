@@ -5,9 +5,12 @@ from labtool.main import *
 
 init(autoreset=True)
 
-def terminal ():
-         logo ()
+header = header ()
 
+logo ()
+
+def terminal ():
+         
          while True:
                
                try:
@@ -35,7 +38,6 @@ def terminal ():
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
                          if use1 == 'headerweb':
-                             header = header ()
                              header.headerweb (ip1)
                    else:
                          print (Fore.RED + "[*] ERROR")
