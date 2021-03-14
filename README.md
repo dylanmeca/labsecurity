@@ -8,6 +8,12 @@
 
 lab_tools is a system that is used for ethical hacking and computer security tests, this system is also a python library.
 
+# Warning
+
+This tool is only for educational purpose.
+
+If you use this tool for other purposes except education we will not be responsible.
+
 ## Pre-requirements
 
 The requirements to use the system is to have the following python modules installed:
