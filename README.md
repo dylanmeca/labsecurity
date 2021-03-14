@@ -34,6 +34,17 @@ python3 setup.py install
 
 Once done, it begins to install.
 
-to start configserver you just have to put the ``` configserver ``` command in the terminal.
+to start lab_tool you just have to put the ``` lab_tool ``` command in the terminal.
 
 Ready
+
+## Authors
+
+* **Dylan Alexander** - *Initial Work* - [dylan14567](https://github.com/dylan14567)
+
+You can also look at the list of all [contributors](https://github.com/dylan14567/lab_tool/contributors) who have participated in this project.
+
+## License
+
+The license for this project is [MIT](https://github.com/dylan14567/lab_tool/blob/main/LICENSE)
+
