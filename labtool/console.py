@@ -29,6 +29,7 @@ def terminal ():
                              header.headerweb (ip1)
                    else:
                          print (Fore.RED + "[*] ERROR")
+
                except ValueError:
                         print (Fore.GREEN + "Error, there is a type of error.")
                         sys.exit ()
