@@ -1,6 +1,7 @@
 import os, sys, time, urllib.request, requests
 from colorama import init, Fore
 from labtool.headers import *
+from labtool.main import *
 
 init(autoreset=True)
 
@@ -9,6 +10,7 @@ def terminal ():
          while True:
                
                try:
+                   logo ()
                    user = input ("lab-tool > ")
                    prompt = user.split ()
 
