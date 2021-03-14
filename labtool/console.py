@@ -1,5 +1,6 @@
 import os, sys, time, urllib.request, requests
 from colorama import init, Fore
+from headers.header import *
 
 init(autoreset=True)
 
