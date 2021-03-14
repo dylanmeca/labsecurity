@@ -33,12 +33,11 @@ def terminal ():
                                print (Fore.GREEN + "ip =>", prompt[2])
                                ip1 = prompt[2]
                    elif prompt[0] == 'use':
+                         global use1
                          if prompt[1] == 'headerweb':
-                               global use1
                                print (Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
                          if prompt[1] == 'scanports':
-                               global use1
                                print (Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
