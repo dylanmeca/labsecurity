@@ -7,3 +7,33 @@
 [![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
 
 lab_tool is a system that allows you to do ethical hacking tests.
+
+
+## Pre-requirements
+
+The requirements to use the system is to have the following python modules installed:
+
+```
+colorama
+requests
+wheel
+```
+
+## Installation
+
+To install lab_tool on linux run these commands on your Linux Terminal.
+
+```shell
+
+git clone https://github.com/dylan14567/lab_tool
+cd lab_tool
+chmod +x *;ls
+python3 setup.py install
+
+```
+
+Once done, it begins to install.
+
+to start configserver you just have to put the ``` configserver ``` command in the terminal.
+
+Ready
