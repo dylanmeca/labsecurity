@@ -19,7 +19,8 @@ def terminal ():
                    elif prompt[0] == 'help':
                          print (Fore.CYAN + "set ip => register the ip in the system")
                          print (Fore.CYAN + "use headerweb => Use a script that extracts information from a website")
-                         print (Fore.CYAN + "run or quit => The run and exploit command is to start the system")
+                         print (Fore.CYAN + "run or exploit => The run and exploit command is to start the system")
+                         print (Fore.CYAN + "exit or quit => Is to exit the system ")
                    elif prompt[0] == 'set':
                          if prompt[1] == 'ip':
                                global ip1
