@@ -2,8 +2,11 @@ import os, sys, time, urllib.request, requests
 from colorama import init, Fore
 from labtool.headers import *
 from labtool.main import *
+from labtool.scanners import *
 
 init(autoreset=True)
+
+scanner = scanner ()
 
 header = header ()
 
@@ -34,11 +37,17 @@ def terminal ():
                                global use1
                                print (Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
+                         if prompt[1] == 'scanports':
+                               global use1
+                               print (Fore.GREEN + "use =>", prompt[1])
+                               use1 = prompt[1]
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
                          if use1 == 'headerweb':
                              header.headerweb (ip1)
+                         if use1 == 'scanports':
+                             scanner.scanports(ip1)
                    else:
                          print (Fore.RED + "[*] ERROR")
 
