@@ -6,11 +6,11 @@ from labtool.main import *
 init(autoreset=True)
 
 def terminal ():
+         logo ()
 
          while True:
                
                try:
-                   logo ()
                    user = input ("lab-tool > ")
                    prompt = user.split ()
 
