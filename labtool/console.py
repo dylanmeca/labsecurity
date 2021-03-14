@@ -24,9 +24,7 @@ def terminal ():
                       break
                elif prompt[0] == 'run' or prompt[0] == 'exploit':
                       if ip1 == ip1:
-                             target = requests.get(url=ip1)
-                             header = dict(target.headers)
-                             for x in header:
-                                 print (x+ " : "+header[x])
+                             header = header ()
+                             header (ip1)
                else:
                     print (Fore.RED + "[*] ERROR")
