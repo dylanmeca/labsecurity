@@ -25,6 +25,6 @@ def terminal ():
                elif prompt[0] == 'run' or prompt[0] == 'exploit':
                       if ip1 == ip1:
                              header = header ()
-                             header (ip1)
+                             header.headerweb (ip1)
                else:
                     print (Fore.RED + "[*] ERROR")
