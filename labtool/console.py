@@ -8,7 +8,7 @@ def terminal ():
 
          while True:
             
-               user = input (">>> ")
+               user = input ("lab-tool > ")
                prompt = user.split ()
 
                if not prompt:
