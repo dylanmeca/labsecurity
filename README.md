@@ -6,8 +6,7 @@
 [![security_policy](https://img.shields.io/badge/security-policy-cyan.svg)](https://github.com/dylan14567/lab_tool/blob/main/SECURITY.md)
 [![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
 
-lab_tool is a system that allows you to do ethical hacking tests.
-
+lab_tools is a system that is used for ethical hacking and computer security tests, this system is also a python library.
 
 ## Pre-requirements
 
