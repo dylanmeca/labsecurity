@@ -14,4 +14,8 @@ class scanner:
                 print ("Protocols used: {}".format(nm[ip].all_protocols()))
                 print ("Machine status: {}".format(nm[ip].state()))
 
+                for ports in nm[ip]['tcp'].keys ():
+                     for data in nm[ip]['tcp'][ports]:
+                             print (data + " : " + nm[ip]['tcp'][ports][data])
+
 
