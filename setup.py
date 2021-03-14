@@ -20,7 +20,7 @@ setuptools.setup(
         "colorama",
         "requests",
         "wheel",
-        "nmap",
+        "python-nmap",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
