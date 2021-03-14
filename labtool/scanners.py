@@ -10,7 +10,7 @@ class scanner:
                 self.ip = ip
                 nm = nmap.PortScanner()
                 nm.scan(hosts=ip, arguments="--top-ports 1000 -sV --version-intensity 3")
-                print ("Command executed: {}".format(nm.command_line())
+                print ("Command executed: {}".format(nm.command_line()))
                 print ("Protocols used: {}".format(nm[ip].all_protocols()))
                 print ("Machine status: {}".format(nm[ip].state()))
 
