@@ -7,9 +7,12 @@ class header:
                return
 
        def headerweb (self,link):
-               self.link = link
-               target = requests.get(url=link)
-               header = dict(target.headers)
-               for x in header:
-                    print (x+ " : "+header[x])
+               try:
+                  self.link = link
+                  target = requests.get(url=link)
+                  header = dict(target.headers)
+                  for x in header:
+                       print (x+ " : "+header[x])
+               except:
+                  print ("[*] Error, could not connect to server")
  
