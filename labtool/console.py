@@ -27,6 +27,7 @@ def terminal ():
                          print (Fore.CYAN + "use headerweb => Use a script that extracts information from a website")
                          print (Fore.CYAN + "run or exploit => The run and exploit command is to start the system")
                          print (Fore.CYAN + "exit or quit => Is to exit the system ")
+                         print (Fore.CYAN + "use scanports => Scan all the ports of an IP")
                    elif prompt[0] == 'set':
                          if prompt[1] == 'ip':
                                global ip1
