@@ -32,10 +32,6 @@ def terminal ():
                                global ip1
                                print (Fore.GREEN + "ip =>", prompt[2])
                                ip1 = prompt[2]
-                         if prompt[1] == 'port':
-                               global port1
-                               print (Fore.GREEN + "port =>", prompt[2])
-                               port1 = prompt[2]
                    elif prompt[0] == 'use':
                          global use1
                          if prompt[1] == 'headerweb':
@@ -50,7 +46,7 @@ def terminal ():
                          if use1 == 'headerweb':
                              header.headerweb (ip1)
                          if use1 == 'scanports':
-                             scanner.scanports(ip1,port1)
+                             scanner.scanports(ip1)
                    else:
                          print (Fore.RED + "[*] ERROR")
 
