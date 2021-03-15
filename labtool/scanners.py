@@ -6,10 +6,11 @@ class scanner:
                 #print ("Welcome")
                 return
 
-        def scanports(self,ip):
+        def scanports(self,ip,port):
                 self.ip = ip
+                self.port = port
                 nm = nmap.PortScanner()
-                nm.scan(ip, "--top-ports 1000 -sV --version-intensity 3")
+                nm.scan(ip, port)
                 print ("Command executed: {}".format(nm.command_line()))
                 print ("Protocols used: {}".format(nm[ip].all_protocols()))
                 print ("Machine status: {}".format(nm[ip].state()))
