@@ -49,6 +49,11 @@ Ready
 
 You can also look at the list of all [contributors](https://github.com/dylan14567/lab_tool/contributors) who have participated in this project.
 
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/dylan14567/lab_tool/blob/main/CONTRIBUTING.md) for details of our code of conduct, and the process for submitting pull requests.
+
 ## License
 
 The license for this project is [MIT](https://github.com/dylan14567/lab_tool/blob/main/LICENSE)
