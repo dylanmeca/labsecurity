@@ -1,5 +1,6 @@
 import os, sys, time, nmap
 import urllib.request, json
+import requests
 
 class scanner:
 
