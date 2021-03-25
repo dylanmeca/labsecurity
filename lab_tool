@@ -6,15 +6,12 @@ from labtool.console import *
 init(autoreset=True)
 
 print ("""
-
 _       _       _              _
 | | __ _| |__   | |_ ___   ___ | |
 | |/ _` | '_ \  | __/ _ \ / _ \| |
 | | (_| | |_) | | || (_) | (_) | |
 |_|\__,_|_.__/___\__\___/ \___/|_|
             |_____|
-
-
 """)
 
 print ("Use the help command for more information about the commands")
