@@ -1,7 +1,10 @@
 import sys, time, os
 
-class logo ():
+class main ():
 
       def __init__(self):
-            os.system ("figlet lab_tool")
-            print ("Use the help command for more information about the commands")
+             #print ("Hello World")
+             return
+
+      def help (self):
+             
