@@ -45,6 +45,12 @@ def terminal ():
                          if prompt[1] == 'scanports':
                                print (Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
+                         if prompt[1] == 'scanport':
+                               print (Fore.GREEN + "use =>", prompt[1])
+                               use1 = prompt[1]
+                         if prompt[1] == 'scanip':
+                               print (Fore.GREEN + "use =>", prompt[1])
+                               use1 = prompt[1]
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
@@ -54,6 +60,8 @@ def terminal ():
                              scanner.scanports(ip1)
                          if use1 == 'scanport':
                              scanner.scanport (ip1,port1)
+                         if use1 == 'scanip':
+                             scanner.scanip (ip1)
                    else:
                          print (Fore.RED + "[*] ERROR")
 
