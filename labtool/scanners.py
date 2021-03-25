@@ -36,7 +36,7 @@ class scanner:
         def scanip (self,ip):
                 self.ip = ip
                 url='https://ipinfo.io/'+ip+'/json'
-                openurl=urllib.requests.urlopen(url)
+                openurl=urllib.request.urlopen(url)
                 loadurl=json.load(openurl)
 
                 for i in openurl:
