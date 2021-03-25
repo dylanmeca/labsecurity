@@ -5,4 +5,5 @@ from labtool.console import *
 
 init(autoreset=True)
 
-terminal ()
+if __name__ == '__main__':
+         terminal ()
