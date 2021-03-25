@@ -1,4 +1,5 @@
 import os, sys, time, nmap
+import urllib.request, json
 
 class scanner:
 
@@ -30,5 +31,14 @@ class scanner:
                 for ports in nm[ip]['tcp'].keys ():
                      for data in nm[ip]['tcp'][ports]:
                              print (data + " : " + nm[ip]['tcp'][ports][data])
+
+        def scanip (self,ip):
+                self.ip = ip
+                url='https://ipinfo.io/'+ip+'/json'
+                openurl=urllib.requests.urlopen(url)
+                loadurl=json.load(openurl)
+
+                for i in openurl:
+                        print (i + " : " + loadurl[i])
 
 
