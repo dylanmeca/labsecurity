@@ -17,5 +17,7 @@ _       _       _              _
 
 """)
 
+print ("Use the help command for more information about the commands")
+
 if __name__ == '__main__':
          terminal ()
