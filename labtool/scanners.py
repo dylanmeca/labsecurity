@@ -39,7 +39,7 @@ class scanner:
                 openurl=urllib.request.urlopen(url)
                 loadurl=json.load(openurl)
 
-                for i in openurl:
+                for i in loadurl:
                         print (i + " : " + loadurl[i])
 
 
