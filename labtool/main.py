@@ -1,4 +1,5 @@
 import sys, time, os
+from colorama import init, Fore
 
 class main ():
 
