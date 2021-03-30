@@ -43,6 +43,29 @@ to start lab_tool you just have to put the ``` lab_tool ``` command in the termi
 
 Ready
 
+
+## Usage:
+
+To use the lab_tool command you just have to put the ```lab_tool``` command, and once that is done the system console will be loaded.
+
+## Custom script
+
+If you want to create your own menu and your own code using the labtool module you must do the following:
+
+```python 
+
+from labtool.headers import *
+from labtool.scanners import *
+
+scanner = scanner ()
+
+header = header ()
+
+scanner.scanports(127.0.0.1) # Scan the ports of an ip
+header.headerweb (http://127.0.0.1) # Gives information from a website
+
+```
+
 ## Authors
 
 * **Dylan Alexander** - *Initial Work* - [dylan14567](https://github.com/dylan14567)
