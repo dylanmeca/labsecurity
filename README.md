@@ -50,7 +50,7 @@ To use the lab_tool command you just have to put the ```lab_tool``` command, and
 
 ## Custom script
 
-If you want to create your own menu and your own code using the labtool module you must do the following:
+If you want to create your own system and your own code using the labtool module you must do the following:
 
 ```python 
 
