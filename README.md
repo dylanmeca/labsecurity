@@ -63,7 +63,7 @@ scanner = scanner ()
 header = header ()
 
 scanner.scanports(127.0.0.1) # Scan the ports of an ip
-header.headerweb (http://127.0.0.1) # Gives information from a website
+header.headerweb ('http://127.0.0.1') # Gives information from a website
 
 ```
 
