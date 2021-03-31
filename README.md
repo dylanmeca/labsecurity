@@ -49,6 +49,8 @@ Ready
 
 To use the lab_tool command you just have to put the ```lab_tool``` command, and once that is done the system console will be loaded.
 
+Inside the lab tool console place the ``` help ``` command to know more information about how to use the system
+
 ## Custom script
 
 If you want to create your own system and your own code using the labtool module you must do the following:
