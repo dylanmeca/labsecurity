@@ -25,7 +25,7 @@ class scanner:
                 nm = nmap.PortScanner()
                 ports_open="-p "
                 results = nm.scan(ip,arguments="-sT -n -Pn -T4")
-                count=0
+                count = 0
                 #print (results)
                 print("\nHost : %s" % ip)
                 print("State : %s" % nm[ip].state())
