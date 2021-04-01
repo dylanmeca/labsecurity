@@ -20,28 +20,29 @@ class scanner:
                      for data in nm[ip]['tcp'][ports]:
                              print (data + " : " + nm[ip]['tcp'][ports][data])
 
-        def scanport(self,ip,port):
+        def scanport(self,ip):
                 self.ip = ip
                 nm = nmap.PortScanner()
                 ports_open="-p "
-                results = nm.scan(hosts=ip,arguments="-sT -n -Pn -T4 -sV --version-intensity 3")
+                results = nm.scan(hosts=ip,arguments="-sT -n -Pn -T4")
                 count=0
                 #print (results)
                 print("\nHost : %s" % ip)
                 print("State : %s" % nm[ip].state())
                 for proto in nm[ip].all_protocols():
-	            print("Protocol : %s" % proto)
-	            print()
-	            lport = nm[ip][proto].keys()
-	            sorted(lport)
-	            for port in lport:
-		         print ("port : %s\tstate : %s" % (port, nm[ip][proto][port]["state"]))
-		         if count==0:
-			     ports_open=ports_open+str(port)
-			     count=1
-		         else:
-			     ports_open=ports_open+","+str(port)
-
+                        print("Protocol : %s" % proto)
+                        print()
+                        lport = nm[ip][proto].keys()
+                        sorted(lport)
+                        for port in lport:
+                               print ("port : %s\tstate : %s" % (port, nm[ip][proto][port]["state"]))
+		               if count==0:
+                                      ports_open=ports_open+str(port)
+                                      count=1
+                               else:
+                                      ports_open=ports_open+","+str(port)
+             
+                
                 print("\nPorts Open: "+ ports_open +" "+str(ip))
 
         def scanip (self,ip):
