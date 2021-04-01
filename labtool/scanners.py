@@ -16,18 +16,6 @@ class scanner:
     def scanports(self, ip):
         self.ip = ip
         nm = nmap.PortScanner()
-        nm.scan(ip, arguments='--top-ports 1000 -sV --version-intensity 3')
-        print("Command executed: {}".format(nm.command_line()))
-        print("Protocols used: {}".format(nm[ip].all_protocols()))
-        print("Machine status: {}".format(nm[ip].state()))
-
-        for ports in nm[ip]['tcp'].keys():
-            for data in nm[ip]['tcp'][ports]:
-                print(data + " : " + nm[ip]['tcp'][ports][data])
-
-    def scanport(self, ip):
-        self.ip = ip
-        nm = nmap.PortScanner()
         ports_open = "-p "
         results = nm.scan(ip, arguments="--top-ports 1000 -sT -n -Pn -T4")
         count = 0
@@ -49,6 +37,20 @@ class scanner:
                     ports_open = ports_open+","+str(port)
 
         print("\nPorts Open: " + ports_open + " "+str(ip))
+
+    def scanport(self, ip, port):
+        self.ip = ip
+        self.port = port
+        nm = nmap.PortScanner()
+        nm.scan(ip, port, arguments='-sV --version-intensity 3')
+        print("Command executed: {}".format(nm.command_line()))
+        print("Protocols used: {}".format(nm[ip].all_protocols()))
+        print("Machine status: {}".format(nm[ip].state()))
+
+        for ports in nm[ip]['tcp'].keys():
+            for data in nm[ip]['tcp'][ports]:
+                print(data + " : " + nm[ip]['tcp'][ports][data])
+
 
     def scanip(self, ip):
         self.ip = ip
