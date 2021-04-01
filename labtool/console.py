@@ -55,7 +55,7 @@ def terminal ():
                          if use1 == 'scanports':
                              scanner.scanports(ip1)
                          if use1 == 'scanport':
-                             scanner.scanport (ip1,port1)
+                             scanner.scanport (ip1)
                          if use1 == 'scanip':
                              scanner.scanip (ip1)
                    else:
