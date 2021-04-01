@@ -22,7 +22,6 @@ class scanner:
 
         def scanport(self,ip,port):
                 self.ip = ip
-                self.port = port
                 nm = nmap.PortScanner()
                 ports_open="-p "
                 results = nm.scan(hosts=ip,arguments="-sT -n -Pn -T4 -sV --version-intensity 3")
