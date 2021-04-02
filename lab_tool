@@ -1,4 +1,5 @@
 #!/bin/python
+# Copyright ©2021 - 2022 by Dylan Meca. All rights reserved. 
 import os, sys, time, urllib.request, requests
 from colorama import init, Fore
 from labtool.console import *
