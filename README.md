@@ -82,7 +82,5 @@ Please read [CONTRIBUTING.md](https://github.com/dylan14567/lab_tool/blob/main/C
 
 ## License
 
-![LICENSE](https://app.fossa.io/projects/git%2Bgithub.com%2dylan14567%2Flab_tool/refs/branch/master/d96cabd631fb4eef564c9a686fd642b663f7a412/preview)
-
 The license for this project is [MIT](https://github.com/dylan14567/lab_tool/blob/main/LICENSE)
 
