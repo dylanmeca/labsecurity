@@ -71,7 +71,7 @@ header.headerweb ('http://127.0.0.1') # Gives information from a website
 
 ## Authors
 
-* **Dylan Alexander** - *Initial Work* - [dylan14567](https://github.com/dylan14567)
+* **Dylan Meca** - *Initial Work* - [dylan14567](https://github.com/dylan14567)
 
 You can also look at the list of all [contributors](https://github.com/dylan14567/lab_tool/contributors) who have participated in this project.
 
