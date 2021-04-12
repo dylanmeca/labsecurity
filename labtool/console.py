@@ -7,8 +7,6 @@ init(autoreset=True)
 
 scanner = scanner ()
 
-header = header ()
-
 main = main ()
 
 def terminal ():
