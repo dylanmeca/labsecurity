@@ -57,7 +57,6 @@ If you want to create your own system and your own code using the labtool module
 
 ```python 
 
-from labtool.headers import *
 from labtool.scanners import *
 
 scanner = scanner ()
@@ -65,7 +64,7 @@ scanner = scanner ()
 header = header ()
 
 scanner.scanports(127.0.0.1) # Scan the ports of an ip
-header.headerweb ('http://127.0.0.1') # Gives information from a website
+scanner.scanweb ('http://127.0.0.1') # Gives information from a website
 
 ```
 
