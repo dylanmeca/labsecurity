@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setuptools.setup(
     name="lab_tool", 
-    version="1.4",
+    version="1.5",
     author="dylan14567",
     author_email="",
     description="lab_tool is a system that allows you to do ethical hacking tests",
