@@ -60,3 +60,14 @@ class scanner:
 
         for i in loadurl:
             print(i + " : " + loadurl[i])
+
+    def scanweb (self,link):
+               try:
+                  self.link = link
+                  target = requests.get(url=link)
+                  header = dict(target.headers)
+                  for x in header:
+                       print (x+ " : "+header[x])
+               except:
+                  print ("[*] Error, could not connect to server")
+ 
