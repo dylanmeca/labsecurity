@@ -68,6 +68,10 @@ scanner.scanweb ('http://127.0.0.1') # Gives information from a website
 
 ```
 
+## Documentation
+
+The project documentation is in: [https://dylan14567.github.io/2021/04/07/labtool-documentation.html](https://dylan14567.github.io/2021/04/07/labtool-documentation.html)
+
 ## Authors
 
 * **Dylan Meca** - *Initial Work* - [dylan14567](https://github.com/dylan14567)
