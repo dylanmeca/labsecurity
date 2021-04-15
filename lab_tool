@@ -13,7 +13,6 @@ _       _       _              _
             |_____|
 """)
 
-print ("Version: 1.5")
 print ("Homepage: https://github.com/dylan14567/lab_tool")
 print ("Use the help command for more information about the commands")
 
