@@ -18,7 +18,7 @@ def terminal ():
                    prompt = user.split ()
 
                    if not prompt:
-                         print (Style.BRIGHT + Fore.RED + "[*] ERROR")
+                         return
                    elif prompt[0] == 'help':
                          main.help ()
                    elif prompt[0] == 'set':
