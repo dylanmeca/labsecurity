@@ -37,7 +37,8 @@ class scanner:
                 else:
                     ports_open = ports_open+","+str(port)
 
-        print("\nPorts Open: " + ports_open + " "+str(ip))
+        print(Style.BRIGHT + Fore.BLUE + "\n[*] Ports Open: " + ports_open + " "+str(ip))
+        print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
     def scanport(self, ip, port):
         self.ip = ip
@@ -52,6 +53,9 @@ class scanner:
             for data in nm[ip]['tcp'][ports]:
                 print(data + " : " + nm[ip]['tcp'][ports][data])
 
+        print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
+
+
 
     def scanip(self, ip):
         self.ip = ip
@@ -62,6 +66,9 @@ class scanner:
         for i in loadurl:
             print(i + " : " + loadurl[i])
 
+        print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
+
+
     def scanweb (self,link):
                try:
                   self.link = link
@@ -69,6 +76,8 @@ class scanner:
                   header = dict(target.headers)
                   for x in header:
                        print (x+ " : "+header[x])
+                 
+                  print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
                except:
-                  print ("[*] Error, could not connect to server")
+                  print (Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
  
