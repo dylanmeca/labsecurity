@@ -5,6 +5,7 @@ import nmap
 import urllib.request
 import json
 import requests
+from colorama import init, Fore, Style
 
 
 class scanner:
