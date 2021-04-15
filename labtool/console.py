@@ -1,5 +1,5 @@
 import os, sys, time, urllib.request, requests
-from colorama import init, Fore
+from colorama import init, Fore, Style
 from labtool.main import *
 from labtool.scanners import *
 
@@ -18,45 +18,49 @@ def terminal ():
                    prompt = user.split ()
 
                    if not prompt:
-                         print (Fore.RED + "[*] ERROR")
+                         print (Style.BRIGHT + Fore.RED + "[*] ERROR")
                    elif prompt[0] == 'help':
                          main.help ()
                    elif prompt[0] == 'set':
                          if prompt[1] == 'ip':
                                global ip1
-                               print (Fore.GREEN + "ip =>", prompt[2])
+                               print (Style.BRIGHT + Fore.GREEN + "ip =>", prompt[2])
                                ip1 = prompt[2]
                          if prompt[1] == 'port':
                                global port1
-                               print (Fore.GREEN + "port =>", prompt[2])
+                               print (Style.BRIGHT + Fore.GREEN + "port =>", prompt[2])
                                port1 = prompt[2]
                    elif prompt[0] == 'use':
                          global use1
                          if prompt[1] == 'scanweb':
-                               print (Fore.GREEN + "use =>", prompt[1])
+                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
                          if prompt[1] == 'scanports':
-                               print (Fore.GREEN + "use =>", prompt[1])
+                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt [1])
                                use1 = prompt[1]
                          if prompt[1] == 'scanport':
-                               print (Fore.GREEN + "use =>", prompt[1])
+                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
                          if prompt[1] == 'scanip':
-                               print (Fore.GREEN + "use =>", prompt[1])
+                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
                          if use1 == 'scanweb':
+                             print (Style.BRIGHT  + Fore.BLUE + "[*] Scanning website...")
                              scanner.scanweb (ip1)
                          if use1 == 'scanports':
+                             print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ports...")
                              scanner.scanports(ip1)
                          if use1 == 'scanport':
+                             print (Style.BRIGHT + Fore.BLUE + "[*] Scanning port...")
                              scanner.scanport (ip1, port1)
                          if use1 == 'scanip':
+                             print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ip...")
                              scanner.scanip (ip1)
                    else:
-                         print (Fore.RED + "[*] ERROR")
+                         print (Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
 
                except ValueError:
                         print (Fore.GREEN + "Error, there is a type of error.")
@@ -73,3 +77,5 @@ def terminal ():
                except TypeError:
                         print (Fore.GREEN + "Error, the code is misspelled.")
                         sys.exit ()
+               except IndexError:
+                        print (Style.BRIGHT + Fore.RED + "[*] ERROR, the command is incomplete or there is a fault, please use the help command")                       

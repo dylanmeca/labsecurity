@@ -1,7 +1,5 @@
 #!/bin/python
 # Copyright ©2021 - 2022 by Dylan Meca. All rights reserved. 
-import os, sys, time, urllib.request, requests
-from colorama import init, Fore
 from labtool.console import *
 
 init(autoreset=True)
@@ -15,6 +13,8 @@ _       _       _              _
             |_____|
 """)
 
+print ("Version: 1.5")
+print ("Homepage: https://github.com/dylan14567/lab_tool")
 print ("Use the help command for more information about the commands")
 
 if __name__ == '__main__':
