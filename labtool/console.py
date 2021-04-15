@@ -63,19 +63,19 @@ def terminal ():
                          print (Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
 
                except ValueError:
-                        print (Fore.GREEN + "Error, there is a type of error.")
+                        print (Style.BRIGHT + Fore.RED + "[*] Error, there is a type of error.")
                         sys.exit ()
                except KeyboardInterrupt:
-                        print (Fore.GREEN + "Exiting...")
+                        print (Style.BRIGHT + Fore.BLUE + "[*] Exiting...")
                         sys.exit ()
                except NameError:
-                        print (Fore.GREEN + "Error, the command I use is not available in the program code.")
+                        print (Style.BRIGHT + Fore.RED + "[*] Error, the command I use is not available in the program code.")
                         sys.exit ()
                except SyntaxError:
-                        print (Fore.GREEN + "Error, the code has a syntax error.")
+                        print (Style.BRIGHT + Fore.RED + "[*] Error, the code has a syntax error.")
                         sys.exit ()
                except TypeError:
-                        print (Fore.GREEN + "Error, the code is misspelled.")
+                        print (Style.BRIGHT + Fore.RED + "[*] Error, the code is misspelled.")
                         sys.exit ()
                except IndexError:
                         print (Style.BRIGHT + Fore.RED + "[*] ERROR, the command is incomplete or there is a fault, please use the help command")                       
