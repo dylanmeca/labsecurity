@@ -77,7 +77,4 @@ def terminal ():
                except TypeError:
                         print (Style.BRIGHT + Fore.RED + "[*] Error, the code is misspelled.")
                         sys.exit ()
-               except IndexError:
-                        print (Style.BRIGHT + Fore.RED + "[*] ERROR, the command is incomplete or there is a fault, please use the help command") 
-               except KeyError:
-                        print (Style.BRIGHT + Fore.RED + "[*] ERROR, ha chose the wrong argument - KeyError: {}".format (prompt [1]))                 
+               
