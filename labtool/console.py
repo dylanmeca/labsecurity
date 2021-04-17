@@ -81,4 +81,7 @@ def terminal ():
                except TypeError:
                         print (Style.BRIGHT + Fore.RED + "[*] Error, the code is misspelled.")
                         sys.exit ()
+               except IndexError:
+                        print (Style.BRIGHT + Fore.RED + "[*] Error, the command you used is incomplete.")
+                        sys.exit ()
                
