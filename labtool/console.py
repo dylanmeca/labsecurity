@@ -55,6 +55,8 @@ def terminal ():
                          if prompt[1] == 'metasploit':
                                print (Style.BRIGHT + Fore.GREEN + "install =>", prompt[1])
                                install1 = prompt[1]
+                   elif prompt[0] == 'clear':
+                         os.system ("clear")
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
