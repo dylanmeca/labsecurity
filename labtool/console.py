@@ -80,7 +80,7 @@ def terminal ():
                         print (Style.BRIGHT + Fore.BLUE + "[*] Exiting...")
                         sys.exit ()
                except NameError:
-                        print (Style.BRIGHT + Fore.RED + "[*] Error, the command I use is not available in the program code.")
+                        print (Style.BRIGHT + Fore.RED + "[*] Error, the command I use is not defined in the program code.")
                         sys.exit ()
                except SyntaxError:
                         print (Style.BRIGHT + Fore.RED + "[*] Error, the code has a syntax error.")
