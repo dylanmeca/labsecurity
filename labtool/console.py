@@ -57,7 +57,8 @@ def terminal ():
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
                          if use1 == 'install':
                              print (Style.BRIGHT + Fore.BLUE + "[*] Installing...")
-                             main.{}.format (install1) ()
+                             if install1 == 'metasploit':
+                                  main.metasploit ()
                          if use1 == 'scanweb':
                              print (Style.BRIGHT  + Fore.BLUE + "[*] Scanning website...")
                              scanner.scanweb (ip1)
