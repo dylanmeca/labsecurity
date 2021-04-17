@@ -52,6 +52,9 @@ def terminal ():
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
+                         if install1 == 'metasploit':
+                             print (Style.BRIGHT + Fore.BLUE + "[*] Install Metasploit...")
+                             main.metasploit ()
                          if use1 == 'scanweb':
                              print (Style.BRIGHT  + Fore.BLUE + "[*] Scanning website...")
                              scanner.scanweb (ip1)
@@ -64,9 +67,6 @@ def terminal ():
                          if use1 == 'scanip':
                              print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ip...")
                              scanner.scanip (ip1)
-                         if install1 == 'metasploit':
-                             print (Style.BRIGHT + Fore.BLUE + "[*] Install Metasploit...")
-                             main.metasploit ()
                    else:
                          print (Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
 
