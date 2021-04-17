@@ -32,6 +32,9 @@ def terminal ():
                                port1 = prompt[2]
                    elif prompt[0] == 'use':
                          global use1
+                         if prompt[1] == 'install':
+                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
+                               use1 = prompt[1]
                          if prompt[1] == 'scanweb':
                                print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
@@ -52,9 +55,9 @@ def terminal ():
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
-                         if install1 == 'metasploit':
-                             print (Style.BRIGHT + Fore.BLUE + "[*] Install Metasploit...")
-                             main.metasploit ()
+                         if use1 == 'install':
+                             print (Style.BRIGHT + Fore.BLUE + "[*] Installing...")
+                             main.{}.format (install1) ()
                          if use1 == 'scanweb':
                              print (Style.BRIGHT  + Fore.BLUE + "[*] Scanning website...")
                              scanner.scanweb (ip1)
