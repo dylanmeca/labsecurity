@@ -20,9 +20,5 @@ class main ():
              print (Style.BRIGHT + Fore.GREEN + "use scanip => Geolocate an ip")
                   
 
-      def metasploit (self):
-             os.system ("curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall")
-             os.system ("chmod 755 msfinstall")
-             os.system ("./msfinstall")
-
+      
              
