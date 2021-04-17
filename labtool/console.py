@@ -22,6 +22,7 @@ def terminal ():
                    elif prompt[0] == 'help':
                          main.help ()
                    elif prompt[0] == 'set':
+                         #Here is the part where the selections are put
                          if prompt[1] == 'ip':
                                global ip1
                                print (Style.BRIGHT + Fore.GREEN + "ip =>", prompt[2])
@@ -32,6 +33,7 @@ def terminal ():
                                port1 = prompt[2]
                    elif prompt[0] == 'use':
                          global use1
+                         #Here is the part where one of the following categories is used
                          if prompt[1] == 'install':
                                print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
@@ -49,6 +51,7 @@ def terminal ():
                                use1 = prompt[1]
                    elif prompt[0] == 'install':
                          global install1
+                         #Here is the part where you install the programs
                          if prompt[1] == 'metasploit':
                                print (Style.BRIGHT + Fore.GREEN + "install =>", prompt[1])
                                install1 = prompt[1]
