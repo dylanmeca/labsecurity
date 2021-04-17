@@ -34,9 +34,6 @@ def terminal ():
                    elif prompt[0] == 'use':
                          global use1
                          #Here is the part where one of the following categories is used
-                         if prompt[1] == 'install':
-                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
-                               use1 = prompt[1]
                          if prompt[1] == 'scanweb':
                                print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
