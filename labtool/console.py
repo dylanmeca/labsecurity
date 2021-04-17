@@ -49,21 +49,11 @@ def terminal ():
                          if prompt[1] == 'scanip':
                                print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                                use1 = prompt[1]
-                   elif prompt[0] == 'install':
-                         global install1
-                         #Here is the part where you install the programs
-                         if prompt[1] == 'metasploit':
-                               print (Style.BRIGHT + Fore.GREEN + "install =>", prompt[1])
-                               install1 = prompt[1]
                    elif prompt[0] == 'clear':
                          os.system ("clear")
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
-                         if use1 == 'install':
-                             print (Style.BRIGHT + Fore.BLUE + "[*] Installing...")
-                             if install1 == 'metasploit':
-                                  main.metasploit ()
                          if use1 == 'scanweb':
                              print (Style.BRIGHT  + Fore.BLUE + "[*] Scanning website...")
                              scanner.scanweb (ip1)
