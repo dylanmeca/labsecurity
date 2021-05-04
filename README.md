@@ -22,6 +22,7 @@ The requirements to use the system is to have the following python modules insta
 ```
 colorama
 requests
+python-nmap
 wheel
 ```
 
