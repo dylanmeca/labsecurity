@@ -15,6 +15,7 @@ setuptools.setup(
     scripts = ['lab_tool'],
     project_urls={
         "Bug Tracker": "https://github.com/dylan14567/lab_tool/issues",
+        "Documentation": "https://dylan14567.github.io/2021/04/07/labtool-documentation.html",
     },
     install_requires=[
         "colorama",
