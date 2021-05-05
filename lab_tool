@@ -2,8 +2,6 @@
 # Copyright ©2021 - 2022 by Dylan Meca. All rights reserved. 
 from labtool.console import *
 
-init(autoreset=True)
-
 print ("""
 _       _       _              _
 | | __ _| |__   | |_ ___   ___ | |
