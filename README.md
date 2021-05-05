@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
 ![logo](https://raw.githubusercontent.com/dylan14567/lab_tool/main/.github/icon.jpg)
 
-lab tool is a framework and its use is for ethical hacking and computer security.
+lab_tool is a framework and its use is for ethical hacking and computer security.
 
 # Warning
 
