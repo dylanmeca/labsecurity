@@ -5,4 +5,3 @@ chmod +x *
 python3 setup.py install
 cd
 rm -rf lab_tool
-
