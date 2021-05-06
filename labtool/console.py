@@ -1,4 +1,6 @@
-import os, sys, time, urllib.request, requests
+import os
+import sys
+import time
 from colorama import init, Fore, Style
 from labtool.main import *
 from labtool.scanners import *
