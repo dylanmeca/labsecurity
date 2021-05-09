@@ -34,7 +34,7 @@ At a high level, the process for proposing changes is:
 4. Submit a pull request.
 5. Wait for your pull request to be reviewed and merged.
 
-Interested in submitting your first pull request? It is easy! You can learn how in this free series [How to contribute to a code project open on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)  
+Interested in submitting your first pull request? It is easy! You can learn how in this free series [How to contribute to a code project open on GitHub](https://app.egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)  
 
 # Your first contribution
 
