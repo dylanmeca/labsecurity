@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: dylan14567 contact
+    url: https://dylan14567.github.io/contact
+    about: Please contact me in case of error in the repository.
+  - name: dylan14567 security
+    url: https://github.com/dylan14567/lab_tool/blob/main/.github/ISSUE_TEMPLATE/bug_report.md
+    about: Please report security vulnerabilities here.
