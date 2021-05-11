@@ -1,12 +1,12 @@
 # Contributing
 
-Hello! We are delighted that you want to contribute to the lab_tool project. Your help is essential to keep it great.
+Hello! We are delighted that you want to contribute to the labsecurity project. Your help is essential to keep it great.
 
 Following these guidelines helps communicate that you are respecting the time of the developers who manage and develop this open source project. In return, they should reciprocate that respect by addressing your issue, evaluating the changes, and helping you finalize your pull requests.
 
 # How to report a bug
 
-Do you think you found a bug? Check [the list of open issues](https://github.com/dylan14567/lab_tool/issues) to see if your bug has already been reported. If not, send a new number.
+Do you think you found a bug? Check [the list of open issues](https://github.com/dylan14567/labsecurity/issues) to see if your bug has already been reported. If not, send a new number.
 
 Here are some tips for writing great bug reports:
 
