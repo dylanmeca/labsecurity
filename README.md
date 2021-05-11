@@ -33,7 +33,7 @@ To install labsecurity on linux run these commands on your Linux Terminal.
 ```shell
 
 git clone https://github.com/dylan14567/labsecurity
-cd lab_tool
+cd labsecurity
 chmod +x *;ls
 python3 setup.py install
 
