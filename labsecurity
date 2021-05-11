@@ -22,7 +22,7 @@ _       _       _              _
             |_____|
 """)
 
-print ("Homepage: https://github.com/dylan14567/lab_tool")
+print ("Homepage: https://github.com/dylan14567/libsecurity")
 print ("Use the help command for more information about the commands")
 
 def terminal ():
