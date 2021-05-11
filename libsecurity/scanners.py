@@ -19,15 +19,15 @@ class scanner:
         self.ip = ip
         nm = nmap.PortScanner()
         ports_open = "-p "
-        results = nm.scan(ip, arguments="--top-ports 1000 -sT -n -Pn -T4")
+        results = nm.scan(self.ip, arguments="--top-ports 1000 -sT -n -Pn -T4")
         count = 0
         #print (results)
-        print("\nHost : %s" % ip)
-        print("State : %s" % nm[ip].state())
-        for proto in nm[ip].all_protocols():
+        print("\nHost : %s" % self.ip)
+        print("State : %s" % nm[self.ip].state())
+        for proto in nm[self.ip].all_protocols():
             print("Protocol : %s" % proto)
             print()
-            lport = nm[ip][proto].keys()
+            lport = nm[self.ip][proto].keys()
             sorted(lport)
             for port in lport:
                 print("port : %s\tstate : %s" %
@@ -38,21 +38,20 @@ class scanner:
                 else:
                     ports_open = ports_open+","+str(port)
 
-        print(Style.BRIGHT + Fore.BLUE + "\n[*] Ports Open: " + ports_open + " "+str(ip))
+        print(Style.BRIGHT + Fore.BLUE + "\n[*] Ports Open: " + ports_open + " "+str(self.ip))
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
     def scanport(self, ip, port):
         self.ip = ip
         self.port = port
         nm = nmap.PortScanner()
-        nm.scan(ip, port, arguments='-sV --version-intensity 3')
-        print("Command executed: {}".format(nm.command_line()))
-        print("Protocols used: {}".format(nm[ip].all_protocols()))
-        print("Machine status: {}".format(nm[ip].state()))
+        nm.scan(self.ip, self.port, arguments='-sV --version-intensity 3')
+        print("Protocols used: {}".format(nm[self.ip].all_protocols()))
+        print("Machine status: {}".format(nm[self.ip].state()))
 
-        for ports in nm[ip]['tcp'].keys():
-            for data in nm[ip]['tcp'][ports]:
-                print(data + " : " + nm[ip]['tcp'][ports][data])
+        for ports in nm[self.ip]['tcp'].keys():
+            for data in nm[self.ip]['tcp'][ports]:
+                print(data + " : " + nm[self.ip]['tcp'][ports][data])
 
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
@@ -60,7 +59,7 @@ class scanner:
 
     def scanip(self, ip):
         self.ip = ip
-        url = 'https://ipinfo.io/'+ip+'/json'
+        url = 'https://ipinfo.io/'+self.ip+'/json'
         openurl = urllib.request.urlopen(url)
         loadurl = json.load(openurl)
 
@@ -73,7 +72,7 @@ class scanner:
     def scanweb (self,link):
                try:
                   self.link = link
-                  target = requests.get(url=link)
+                  target = requests.get(url=self.link)
                   header = dict(target.headers)
                   for x in header:
                        print (x+ " : "+header[x])
