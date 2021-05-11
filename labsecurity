@@ -10,7 +10,6 @@ from libsecurity.scanners import *
 init(autoreset=True)
 
 scanner = scanner ()
-
 main = main ()
 
 print ("""
@@ -101,7 +100,6 @@ def terminal ():
                         print (Style.BRIGHT + Fore.RED + "[*] Error, the command you used is incomplete.")
                         sys.exit ()
                
-
 
 if __name__ == '__main__':
          terminal ()
