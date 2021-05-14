@@ -1,6 +1,5 @@
 ---
 layout: default
-description: labsecurity documentation
 keywords:
   - labsecurity
   - security
