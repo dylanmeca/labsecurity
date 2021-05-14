@@ -1,6 +1,6 @@
 ---
 layout: default1
-title: Info
+title: About
 description: This is the legal agreements page of labsecurity
 keywords:
   - labsecurity
