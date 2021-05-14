@@ -54,7 +54,7 @@ Inside the lab tool console place the ``` help ``` command to know more informat
 
 ## Documentation
 
-The project documentation is in: [https://dylan14567.github.io/2021/05/10/labsecurity-documentation.html](https://dylan14567.github.io/2021/04/07/labtool-documentation.html)
+The project documentation is in: [https://dylan14567.github.io/labsecurity](https://dylan14567.github.io/2021/04/07/labtool-documentation.html)
 
 ## Authors
 
@@ -69,5 +69,5 @@ Please read [CONTRIBUTING.md](https://github.com/dylan14567/labsecurity/blob/mai
 
 ## License
 
-The license for this project is [MIT](https://github.com/dylan14567/lab_tool/blob/main/LICENSE)
+The license for this project is [MIT](https://github.com/dylan14567/labsecurity/blob/main/LICENSE)
 
