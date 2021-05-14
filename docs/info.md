@@ -23,3 +23,13 @@ As the developer of the labsecurity software, I am not responsible if you use th
 ## Privacy Policy
 
 Our privacy policy can be found [here](https://dylan14567.github.io/2021/03/08/POLÍTICA-DE-PRIVACIDAD.html)
+
+## Terms and conditions of use
+
+## Relevant Information
+
+It is a necessary requirement for the acquisition of labsecurity offered on this site, that you read and accept the following Terms and Conditions that are written below. The use of our services will imply that you have read and accepted the Terms and Conditions of Use in this document. All the products that are offered by our website could be created, collected, sent or presented by a third website and in this case they would be subject to their own Terms and Conditions. In some cases, to purchase a product, the user will need to register, with the entry of reliable personal data and definition of a password. The RELEVANT INFORMATION It is a necessary requirement for the acquisition of the products offered on this site, that you read and accept the following Terms and Conditions that are written below. The use of our services as well as the purchase of our products will imply that you have read and accepted the Terms and Conditions of Use in this document. All the products that are offered by our website could be created, sent or presented by a third-party website and in such case they would be subject to their own Terms and Conditions. All downloads carried out through the project are subject to a confirmation and verification process, which could include verification of the stock and product availability, validation of the payment method, invoice validation (in case if any) and compliance with the required conditions.
+
+## LICENSE
+
+Dylan Meca through its website grants a license for users to use labsecurity in accordance with the Terms and Conditions described in this document.
