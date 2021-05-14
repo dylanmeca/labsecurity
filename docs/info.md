@@ -19,3 +19,7 @@ As a developer of security software, services, and research, we take security co
 ## Disclaimer
 
 As the developer of the labsecurity software, I am not responsible if you use this software for illegal purposes this software was created in order to find vulnerabilities within a specific system or software both common server or a pc, to report it and try to improve the software and that way that vulnerability will not exist, this software is also used for educational purposes with which to teach how a hacker accesses information that he should not have, and how to prevent it.
+
+## Privacy Policy
+
+our privacy policy can be found [here](https://dylan14567.github.io/2021/03/08/POLÍTICA-DE-PRIVACIDAD.html)
