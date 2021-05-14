@@ -10,6 +10,8 @@ show_excerpts: false
 
 theme: jekyll-theme-cayman
 
+copyright: "dylan14567"
+
 disqus:
   shortname: true
 
