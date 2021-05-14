@@ -21,6 +21,8 @@ labsecurity is a framework and its use is for ethical hacking and computer secur
 
 Legal information about the project at: [Info](info)
 
+By using and downloading labsecurity you are accepting its [terms and conditions](https://dylan14567.github.io/labsecurity/info#terms-and-conditions-of-use).
+
 # Introduction
 
 - [How to use the console](#how-to-use-the-console)
