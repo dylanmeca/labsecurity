@@ -1,12 +1,13 @@
 ---
 layout: default
 title: Info
-description: labsecurity is a framework and its use is for ethical hacking and computer security
+description: This is the legal agreements page of labsecurity
 keywords:
   - labsecurity
   - security
   - lab
-  - documentation
+  - info
+  - Legal agreements
 ---
 
 # Legal agreements
