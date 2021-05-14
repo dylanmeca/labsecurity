@@ -19,6 +19,8 @@ keywords:
 
 labsecurity is a framework and its use is for ethical hacking and computer security.
 
+Legal information about the project at: [Info](info)
+
 # Introduction
 
 - [How to use the console](#how-to-use-the-console)
