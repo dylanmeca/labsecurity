@@ -4,13 +4,11 @@ import os
 import sys
 import time
 from colorama import init, Fore, Style
-from libsecurity.main import *
-from libsecurity.scanners import *
+from libsecurity.interpreter import *
 
 init(autoreset=True)
 
-scanner = scanner ()
-main = main ()
+process = process ()
 
 print ("""
 
@@ -31,53 +29,20 @@ def terminal ():
                try:
                    user = input ("labsecurity > ")
                    prompt = user.split ()
-
-                   if not prompt:
-                         print (Style.BRIGHT + Fore.RED + "[*] ERROR, you must add a command")
-                   elif prompt[0] == 'help':
-                         main.help ()
+                   
+                   if prompt[0] == 'help':
+                        process.command_help (user)
                    elif prompt[0] == 'set':
-                         #Here is the part where the selections are put
-                         if prompt[1] == 'ip':
-                               global ip1
-                               print (Style.BRIGHT + Fore.GREEN + "ip =>", prompt[2])
-                               ip1 = prompt[2]
-                         if prompt[1] == 'port':
-                               global port1
-                               print (Style.BRIGHT + Fore.GREEN + "port =>", prompt[2])
-                               port1 = prompt[2]
+                        process.command_set (user)
                    elif prompt[0] == 'use':
-                         global use1
-                         #Here is the part where one of the following categories is used
-                         if prompt[1] == 'scanweb':
-                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
-                               use1 = prompt[1]
-                         if prompt[1] == 'scanports':
-                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt [1])
-                               use1 = prompt[1]
-                         if prompt[1] == 'scanport':
-                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
-                               use1 = prompt[1]
-                         if prompt[1] == 'scanip':
-                               print (Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
-                               use1 = prompt[1]
+                        process.command_use (user)
                    elif prompt[0] == 'clear':
-                         os.system ("clear")
-                   elif prompt[0] == 'exit' or prompt[0] == 'quit':
-                         break
-                   elif prompt[0] == 'run' or prompt[0] == 'exploit':
-                         if use1 == 'scanweb':
-                             print (Style.BRIGHT  + Fore.BLUE + "[*] Scanning website...")
-                             scanner.scanweb (ip1)
-                         if use1 == 'scanports':
-                             print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ports...")
-                             scanner.scanports(ip1)
-                         if use1 == 'scanport':
-                             print (Style.BRIGHT + Fore.BLUE + "[*] Scanning port...")
-                             scanner.scanport (ip1, port1)
-                         if use1 == 'scanip':
-                             print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ip...")
-                             scanner.scanip (ip1)
+                        process.command_clear (user)
+                   elif prompt[0] == 'exit':
+                        process.command_exit ()
+                        break
+                   elif prompt[0] == 'run' or prompt[0] == 'exploit': 
+                        process.command_run ('exit')
                    else:
                          print (Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
 
