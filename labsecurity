@@ -37,7 +37,7 @@ def terminal ():
                         global data
                         argument = prompt[1]
                         data = prompt[2]
-                        command = 'set ' + argument + data
+                        command = prompt[0] + argument + data
                         process.command_set (command)
                    elif prompt[0] == 'use':
                         global data1
