@@ -2,7 +2,7 @@ import os
 import sys
 import time
 from .main import *
-from .scanners import *
+from .core.scanners import *
 from colorama import init, Fore, Style
 
 init(autoreset=True)
