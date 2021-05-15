@@ -33,9 +33,9 @@ def terminal ():
                    if prompt[0] == 'help':
                         process.command_help (user)
                    elif prompt[0] == 'set':
-                        process.command_set (command)
+                        process.command_set (user)
                    elif prompt[0] == 'use':
-                        process.command_use (command)
+                        process.command_use (user)
                    elif prompt[0] == 'clear':
                         process.command_clear (user)
                    elif prompt[0] == 'exit':
