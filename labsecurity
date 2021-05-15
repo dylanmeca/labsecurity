@@ -33,13 +33,11 @@ def terminal ():
                    if prompt[0] == 'help':
                         process.command_help (user)
                    elif prompt[0] == 'set':
-                        global set
                         global argument
                         global data
-                        set = prompt[0]
                         argument = prompt[1]
                         data = prompt[2]
-                        command = set + argument + data
+                        command = 'set ' + argument + data
                         process.command_set (command)
                    elif prompt[0] == 'use':
                         global data1
