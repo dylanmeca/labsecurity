@@ -23,11 +23,11 @@ class process:
             
             if self.prompt[1] == 'ip':
                  print (Style.BRIGHT + Fore.GREEN + "ip =>", self.prompt[2])
-                 ip = self.prompt[3]
+                 ip = self.prompt[2]
                  self.ip = ip
             elif self.prompt[1] == 'port':
                  print (Style.BRIGHT + Fore.GREEN + "port =>", self.prompt[2])
-                 port = self.prompt[3]
+                 port = self.prompt[2]
                  self.port = port
             else:
                  print (Style.BRIGHT + Fore.RED + "[*] Error, the command is misspelled")
