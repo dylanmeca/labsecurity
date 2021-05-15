@@ -58,7 +58,22 @@ class process:
       def command_exit (self):
             sys.exit ()
 
-      def command_run (self, data):
+      def command_run (self):
+            if self.use == 'scanweb':
+                print (Style.BRIGHT  + Fore.BLUE + "[*] Scanning website...")
+                scanner.scanweb (self.ip)
+            elif self.use == 'scanports':
+                print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ports...")
+                scanner.scanports(self.ip)
+            elif self.use == 'scanport':
+                print (Style.BRIGHT + Fore.BLUE + "[*] Scanning port...")
+                scanner.scanport (self.ip, self.port)
+            elif self.use == 'scanip':
+                print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ip...")
+                scanner.scanip (self.ip)
+            else:
+                print (Style.BRIGHT + Fore.RED + "[*] Error, the command is misspelled")
+
 
 
                  
