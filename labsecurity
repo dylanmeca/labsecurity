@@ -32,7 +32,9 @@ def terminal ():
                    user = input ("labsecurity > ")
                    prompt = user.split ()
 
-                   if prompt[0] == 'help':
+                   if not prompt:
+                         os.system ("cd")
+                   elif prompt[0] == 'help':
                          main.help ()
                    elif prompt[0] == 'set':
                          #Here is the part where the selections are put
