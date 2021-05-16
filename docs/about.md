@@ -22,7 +22,6 @@ keywords:
    - [PROPERTY](#property)
    - [ANTI-FRAUD CHECK](#anti-fraud-check)
 
-
 ## Vulnerability Disclosure Policy
 
 As a developer of security software, services, and research, we take security concerns very seriously and recognize the importance of privacy, security, and community outreach. 
