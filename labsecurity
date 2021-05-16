@@ -5,7 +5,7 @@ import sys
 import time
 from colorama import init, Fore, Style
 from libsecurity.main import *
-from libsecurity.core.scanners import *
+from libsecurity.scanners import *
 
 init(autoreset=True)
 
