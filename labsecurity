@@ -32,9 +32,7 @@ def terminal ():
                    user = input ("labsecurity > ")
                    prompt = user.split ()
 
-                   if not prompt:
-                         print (Style.BRIGHT + Fore.RED + "[*] ERROR, you must add a command")
-                   elif prompt[0] == 'help':
+                   if prompt[0] == 'help':
                          main.help ()
                    elif prompt[0] == 'set':
                          #Here is the part where the selections are put
