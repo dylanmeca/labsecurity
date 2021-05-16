@@ -54,7 +54,7 @@ Inside the lab tool console place the ``` help ``` command to know more informat
 
 ## Documentation
 
-The project documentation is in: [https://dylan14567.github.io/labsecurity](https://dylan14567.github.io/2021/04/07/labtool-documentation.html)
+The project documentation is in: [https://dylan14567.github.io/labsecurity](https://dylan14567.github.io/labsecurity)
 
 ## Authors
 
