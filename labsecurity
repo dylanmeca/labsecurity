@@ -67,6 +67,9 @@ def terminal ():
                                print (Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
                    elif prompt[0] == 'clear':
                          os.system ("clear")
+                   elif prompt[0] == 'ls':
+                         command = interpreter.command_ls ()
+                         os.system (command)
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
