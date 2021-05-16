@@ -16,11 +16,11 @@ keywords:
 - [Disclaimer](#disclaimer)
 - [Privacy Policy](#privacy-policy)
 - [Terms and conditions of use](#terms-and-conditions-of-use)
-   - [Relevant Information](#relevant-information)
-   - [LICENSE](#license)
-   - [UNAUTHORIZED USE](#unauthorized-use)
-   - [PROPERTY](#property)
-   - [ANTI-FRAUD CHECK](#anti-fraud-check)
+    - [Relevant Information](#relevant-information)
+    - [LICENSE](#license)
+    - [UNAUTHORIZED USE](#unauthorized-use)
+    - [PROPERTY](#property)
+    - [ANTI-FRAUD CHECK](#anti-fraud-check)
 
 ## Vulnerability Disclosure Policy
 
