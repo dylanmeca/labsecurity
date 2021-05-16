@@ -27,7 +27,3 @@ class interpreter:
                     return 'ls'
              else:
                     return
-                  
-
-      
-             
