@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setuptools.setup(
     name="labsecurity", 
-    version="1.6",
+    version="1.7",
     author="dylan14567",
     author_email="",
     description="labsecurity is a framework and its use is for ethical hacking and computer security",
