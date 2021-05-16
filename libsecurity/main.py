@@ -25,6 +25,8 @@ class interpreter:
                     return 'dir'
              elif system == 'Linux':
                     return 'ls'
+             else:
+                    return
                   
 
       
