@@ -29,12 +29,7 @@ def terminal ():
          while True:
                
                try:
-                   use1 = None
-                   if use1 == None:
-                      user = input ("labsecurity > ")
-                   else:
-                      user = input ("labsecurity({}) > ".format (use1))
-
+                   user = input ("labsecurity > ")
                    prompt = user.split ()
 
                    if not prompt:
