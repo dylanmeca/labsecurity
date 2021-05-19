@@ -43,7 +43,7 @@ The ``` set ``` command selects something for example with the ``` set ``` comma
 
 ## Select ip
 
-Inside the console when we use the ``` set ``` command, the ``` set ``` command is used to select something for example an ip and for that we would have to place for example ``` set target ```, ``` set ``` is to select but in the front it says ip because it specifies what type of argument we will use and once we do that we will have to put ``` set target 192.168.1.103 ```, in this example we will have selected an ip.
+Inside the console when we use the ``` set ``` command, the ``` set ``` command is used to select something for example an ip and for that we would have to place for example ``` set target ```, ``` set ``` is to select but in the front it says target because it specifies what type of argument we will use and once we do that we will have to put ``` set target 192.168.1.103 ```, in this example we will have selected an ip.
 
 ## Select port
 
