@@ -38,10 +38,10 @@ def terminal ():
                          interpreter.help ()
                    elif prompt[0] == 'set':
                          #Here is the part where the selections are put
-                         if prompt[1] == 'ip':
-                               global ip1
-                               print (Style.BRIGHT + Fore.GREEN + "ip =>", prompt[2])
-                               ip1 = prompt[2]
+                         if prompt[1] == 'target':
+                               global target1
+                               print (Style.BRIGHT + Fore.GREEN + "target =>", prompt[2])
+                               target1 = prompt[2]
                          elif prompt[1] == 'port':
                                global port1
                                print (Style.BRIGHT + Fore.GREEN + "port =>", prompt[2])
@@ -75,16 +75,16 @@ def terminal ():
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
                          if use1 == 'scanweb':
                              print (Style.BRIGHT  + Fore.BLUE + "[*] Scanning website...")
-                             scanner.scanweb (ip1)
+                             scanner.scanweb (target1)
                          elif use1 == 'scanports':
                              print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ports...")
-                             scanner.scanports(ip1)
+                             scanner.scanports(target1)
                          elif use1 == 'scanport':
                              print (Style.BRIGHT + Fore.BLUE + "[*] Scanning port...")
-                             scanner.scanport (ip1, port1)
+                             scanner.scanport (target1, port1)
                          elif use1 == 'scanip':
                              print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ip...")
-                             scanner.scanip (ip1)
+                             scanner.scanip (target1)
                          else:
                              print (Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
                    else:
