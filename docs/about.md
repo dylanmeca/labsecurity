@@ -36,7 +36,7 @@ As the developer of the labsecurity software, I am not responsible if you use th
 
 ## Privacy Policy
 
-Our privacy policy can be found [here](https://dylan14567.github.io/2021/06/05/politica-de-privacidad.html)
+Our privacy policy can be found [here](https://dylan14567.github.io/politica-de-privacidad)
 
 ## Terms and conditions of use
 
