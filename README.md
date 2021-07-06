@@ -58,6 +58,14 @@ Inside the lab tool console place the ``` help ``` command to know more informat
 
 The project documentation is in: [https://dylan14567.github.io/labsecurity](https://dylan14567.github.io/labsecurity)
 
+# Vulnerability Disclosure Policy
+
+As a developer of security software, services, and research, we take security concerns very seriously and recognize the importance of privacy, security, and community outreach. 
+
+As such, we are committed to addressing and reporting security issues through a coordinated and constructive approach designed to drive the greatest protection for technology users through this software.
+
+A software developer or just a security enthusiast, you are an important part of this process.
+
 ## Authors
 
 * **Dylan Meca** - *Initial Work* - [dylan14567](https://github.com/dylan14567)
