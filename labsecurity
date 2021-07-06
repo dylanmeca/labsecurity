@@ -8,9 +8,6 @@ from colorama import init, Fore, Style
 
 init(autoreset=True)
 
-scanner = scanner ()
-interpreter = interpreter ()
-
 print ("""
 
    __     __                        _ __
