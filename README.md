@@ -17,8 +17,6 @@ If you use this tool for other purposes except education we will not be responsi
 
 As the developer of the labsecurity software, I am not responsible if you use this software for illegal purposes this software was created in order to find vulnerabilities within a specific system or software both common server or a pc, to report it and try to improve the software and that way that vulnerability will not exist, this software is also used for educational purposes with which to teach how a hacker accesses information that he should not have, and how to prevent it.
 
-Client download can be postponed for fraud check. It can also be suspended for a longer time for a more rigorous investigation, to avoid fraudulent copies.
-
 ## Pre-requirements
 
 The requirements to use the system is to have the following python modules installed:
