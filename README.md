@@ -17,6 +17,8 @@ If you use this tool for other purposes except education we will not be responsi
 
 As the developer of the labsecurity software, I am not responsible if you use this software for illegal purposes this software was created in order to find vulnerabilities within a specific system or software both common server or a pc, to report it and try to improve the software and that way that vulnerability will not exist, this software is also used for educational purposes with which to teach how a hacker accesses information that he should not have, and how to prevent it.
 
+Client download can be postponed for fraud check. It can also be suspended for a longer time for a more rigorous investigation, to avoid fraudulent copies.
+
 ## Pre-requirements
 
 The requirements to use the system is to have the following python modules installed:
@@ -58,7 +60,7 @@ Inside the lab tool console place the ``` help ``` command to know more informat
 
 The project documentation is in: [https://dylan14567.github.io/2021/07/05/labsecurity.html](https://dylan14567.github.io/2021/07/05/labsecurity.html)
 
-# Vulnerability Disclosure Policy
+## Vulnerability Disclosure Policy
 
 As a developer of security software, services, and research, we take security concerns very seriously and recognize the importance of privacy, security, and community outreach. 
 
@@ -72,6 +74,17 @@ A software developer or just a security enthusiast, you are an important part of
 
 You can also look at the list of all [contributors](https://github.com/dylan14567/labsecurity/contributors) who have participated in this project.
 
+## UNAUTHORIZED USE
+
+If applicable (for sale of software, templates, or other design and programming products) you may not place labsecurity, modified or unmodified, on a CD, website or any other medium and offer them for redistribution or resale of any kind.
+
+## PROPERTY
+
+You cannot declare labsecurity intellectual or exclusive property, modified or unmodified.
+
+All products are the property of the content providers.
+
+Unless otherwise specified, our products are provided without warranty of any kind, express or implied. In no way will this company be liable for any damages including, but not limited to, direct, indirect, special, incidental or consequential damages or other losses resulting from the use or inability to use our products.
 
 ## Contributing
 
