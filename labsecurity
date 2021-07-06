@@ -3,9 +3,8 @@
 import os
 import sys
 import time
+import libsecurity as lab
 from colorama import init, Fore, Style
-from libsecurity.main import *
-from libsecurity.scanners import *
 
 init(autoreset=True)
 
@@ -35,7 +34,7 @@ def terminal ():
                    if not prompt:
                          os.system ("cd")
                    elif prompt[0] == 'help':
-                         interpreter.help ()
+                         lab.help ()
                    elif prompt[0] == 'set':
                          #Here is the part where the selections are put
                          if prompt[1] == 'target':
@@ -68,23 +67,23 @@ def terminal ():
                    elif prompt[0] == 'clear':
                          os.system ("clear")
                    elif prompt[0] == 'ls':
-                         command = interpreter.command_ls ()
+                         command = lab.command_ls ()
                          os.system (command)
                    elif prompt[0] == 'exit' or prompt[0] == 'quit':
                          break
                    elif prompt[0] == 'run' or prompt[0] == 'exploit':
                          if use == 'scanweb':
                              print (Style.BRIGHT  + Fore.BLUE + "[*] Scanning website...")
-                             scanner.scanweb (target1)
+                             lab.scanweb (target)
                          elif use == 'scanports':
                              print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ports...")
-                             scanner.scanports(target1)
+                             lab.scanports(target)
                          elif use == 'scanport':
                              print (Style.BRIGHT + Fore.BLUE + "[*] Scanning port...")
-                             scanner.scanport (target1, port1)
+                             lab.scanport (target, port)
                          elif use == 'scanip':
                              print (Style.BRIGHT + Fore.BLUE + "[*] Scanning ip...")
-                             scanner.scanip (target1)
+                             lab.scanip (target)
                          else:
                              print (Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
                    else:
