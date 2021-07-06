@@ -74,11 +74,7 @@ A software developer or just a security enthusiast, you are an important part of
 
 You can also look at the list of all [contributors](https://github.com/dylan14567/labsecurity/contributors) who have participated in this project.
 
-## UNAUTHORIZED USE
-
-If applicable (for sale of software, templates, or other design and programming products) you may not place labsecurity, modified or unmodified, on a CD, website or any other medium and offer them for redistribution or resale of any kind.
-
-## PROPERTY
+## Property
 
 You cannot declare labsecurity intellectual or exclusive property, modified or unmodified.
 
