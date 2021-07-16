@@ -22,6 +22,7 @@ setuptools.setup(
         "requests",
         "wheel",
         "python-nmap",
+        "dnspython",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
