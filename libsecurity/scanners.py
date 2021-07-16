@@ -22,16 +22,14 @@ class scanner:
         results = nm.scan(self.ip, arguments="--top-ports 1000 -sT -n -Pn -T4")
         count = 0
         #print (results)
-        print("\nHost : %s" % self.ip)
-        print("State : %s" % nm[self.ip].state())
+        print("\nHost : {}".format (self.ip))
+        print("State : {}".format (nm[self.ip].state()))
         for proto in nm[self.ip].all_protocols():
-            print("Protocol : %s" % proto)
-            print()
+            print("Protocol : {}".format (proto))
             lport = nm[self.ip][proto].keys()
             sorted(lport)
             for port in lport:
-                print("port : %s\tstate : %s" %
-                      (port, nm[ip][proto][port]["state"]))
+                print("port : {}\tstate : {}".format(port, nm[ip][proto][port]["state"]))
                 if count == 0:
                     ports_open = ports_open+str(port)
                     count = 1
