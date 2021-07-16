@@ -1,5 +1,4 @@
 colorama
 requests
 python-nmap
-serverlla
 wheel
