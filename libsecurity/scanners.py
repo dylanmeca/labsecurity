@@ -36,7 +36,7 @@ class scanner:
                 else:
                     ports_open = ports_open+","+str(port)
 
-        print(Style.BRIGHT + Fore.BLUE + "\n[*] Ports Open: " + ports_open + " " + "IP: "+str(self.ip))
+        print(Style.BRIGHT + Fore.BLUE + "\n[*] Ports Open: " + ports_open + " " + "Host: "+str(self.ip))
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
     def scanport(self, ip, port):
