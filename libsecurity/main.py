@@ -1,4 +1,5 @@
 import platform
+import adminserver as server
 from colorama import init, Fore, Style
 
 init(autoreset=True)
@@ -27,3 +28,7 @@ class interpreter:
                     return 'ls'
              else:
                     return
+
+      def myinfo (self):
+             server.systeminfo()
+             
