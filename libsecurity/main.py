@@ -31,5 +31,4 @@ class interpreter:
                     return
 
       def myip (self):
-             GetIpPublica()()
-             
+             GetIpPublica()
