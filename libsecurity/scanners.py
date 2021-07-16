@@ -5,6 +5,7 @@ import nmap
 import urllib.request
 import json
 import requests
+import dns.resolver
 from colorama import init, Fore, Style
 
 init(autoreset=True)
@@ -56,6 +57,15 @@ class scanner:
 
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
+    def scandns_NS(self, ip):
+        try:
+          self.ip = ip
+          target = dns.resolver.resolve(self.ip, "NS")
+          for x in target:
+            print (x)
+        except:
+          print(Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
+              
     def scanip(self, ip):
         self.ip = ip
         url = 'https://ipinfo.io/'+self.ip+'/json'
