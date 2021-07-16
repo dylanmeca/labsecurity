@@ -9,6 +9,7 @@ from colorama import init, Fore, Style
 
 init(autoreset=True)
 
+
 class scanner:
 
     def ___init__(self):
@@ -22,21 +23,23 @@ class scanner:
         results = nm.scan(self.ip, arguments="--top-ports 1000 -sT -n -Pn -T4")
         count = 0
         #print (results)
-        print("\nHost : {}".format (self.ip))
-        print("State : {}".format (nm[self.ip].state()))
+        print("\nHost : {}".format(self.ip))
+        print("State : {}".format(nm[self.ip].state()))
         for proto in nm[self.ip].all_protocols():
-            print("Protocol : {}".format (proto))
+            print("Protocol : {}".format(proto))
             lport = nm[self.ip][proto].keys()
             sorted(lport)
             for port in lport:
-                print("port : {}\tstate : {}".format(port, nm[ip][proto][port]["state"]))
+                print("port : {}\tstate : {}".format(
+                    port, nm[ip][proto][port]["state"]))
                 if count == 0:
                     ports_open = ports_open+str(port)
                     count = 1
                 else:
                     ports_open = ports_open+","+str(port)
 
-        print(Style.BRIGHT + Fore.BLUE + "\n[*] Ports Open: " + ports_open + " " + "Host: "+str(self.ip))
+        print(Style.BRIGHT + Fore.BLUE +
+              "\n[*] Ports Open: " + ports_open + " " + "Host: "+str(self.ip))
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
     def scanport(self, ip, port):
@@ -53,8 +56,6 @@ class scanner:
 
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
-
-
     def scanip(self, ip):
         self.ip = ip
         url = 'https://ipinfo.io/'+self.ip+'/json'
@@ -66,16 +67,15 @@ class scanner:
 
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
+    def scanweb(self, link):
+        try:
+            self.link = link
+            target = requests.get(url=self.link)
+            header = dict(target.headers)
+            for x in header:
+                print(x + " : "+header[x])
 
-    def scanweb (self,link):
-               try:
-                  self.link = link
-                  target = requests.get(url=self.link)
-                  header = dict(target.headers)
-                  for x in header:
-                       print (x+ " : "+header[x])
-                 
-                  print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
-               except:
-                  print (Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
- 
+            print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
+        except:
+            print(Style.BRIGHT + Fore.RED +
+                  "[*] Error, could not connect to server")
