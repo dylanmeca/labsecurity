@@ -1,5 +1,5 @@
 import platform
-import adminserver as server
+from adminserver.main import *
 from colorama import init, Fore, Style
 
 init(autoreset=True)
@@ -19,6 +19,7 @@ class interpreter:
              print (Style.BRIGHT + Fore.GREEN + "use scanport => Scan the port of an ip")
              print (Style.BRIGHT + Fore.GREEN + "set port => register the port in the system")
              print (Style.BRIGHT + Fore.GREEN + "use scanip => Geolocate an ip")
+             print (Style.BRIGHT + Fore.GREEN + "myip => Get your public ip")
 
       def command_ls (self):
              system = platform.system()
@@ -29,6 +30,6 @@ class interpreter:
              else:
                     return
 
-      def myinfo (self):
-             server.systeminfo()
+      def myip (self):
+             GetIpPublica()()
              
