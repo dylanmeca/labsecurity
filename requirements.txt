@@ -1,4 +1,5 @@
 colorama
 requests
 python-nmap
+dnspython
 wheel
