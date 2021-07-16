@@ -11,4 +11,3 @@ scanweb = scanner.scanweb
 
 help = interpreter.help
 command_ls = interpreter.command_ls
-myip = interpreter.myip
