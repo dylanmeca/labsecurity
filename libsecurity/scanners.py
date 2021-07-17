@@ -63,6 +63,8 @@ class scanner:
           target = dns.resolver.resolve(self.ip, "NS")
           for x in target:
             print (x)
+
+          print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
         except:
           print(Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
               
