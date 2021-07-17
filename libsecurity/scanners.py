@@ -57,7 +57,7 @@ class scanner:
 
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
-    def scandns_NS(self, ip):
+    def scanns(self, ip):
         try:
           self.ip = ip
           target = dns.resolver.resolve(self.ip, "NS")
