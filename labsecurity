@@ -88,7 +88,8 @@ def terminal():
                     print(Style.BRIGHT + Fore.BLUE + "[*] Scanning ip...")
                     lab.scanip(target)
                 elif use == 'scanns':
-                    print(Style.BRIGHT + Fore.BLUE + "[*] Scanning NS from DNS...")
+                    print(Style.BRIGHT + Fore.BLUE +
+                          "[*] Scanning NS from DNS...")
                     lab.scanns(target)
                 else:
                     print(Style.BRIGHT + Fore.RED +

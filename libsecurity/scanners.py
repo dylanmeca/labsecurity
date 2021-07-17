@@ -59,15 +59,16 @@ class scanner:
 
     def scanns(self, ip):
         try:
-          self.ip = ip
-          target = dns.resolver.resolve(self.ip, "NS")
-          for x in target:
-            print (x)
+            self.ip = ip
+            target = dns.resolver.resolve(self.ip, "NS")
+            for x in target:
+                print(x)
 
-          print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
+            print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
         except:
-          print(Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
-              
+            print(Style.BRIGHT + Fore.RED +
+                  "[*] Error, could not connect to server")
+
     def scanip(self, ip):
         self.ip = ip
         url = 'https://ipinfo.io/'+self.ip+'/json'

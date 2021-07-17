@@ -26,7 +26,8 @@ class interpreter:
         print(Style.BRIGHT + Fore.GREEN +
               "set port => register the port in the system")
         print(Style.BRIGHT + Fore.GREEN + "use scanip => Geolocate an ip")
-        print(Style.BRIGHT + Fore.GREEN + "scanns => Get authorization name server")
+        print(Style.BRIGHT + Fore.GREEN +
+              "scanns => Get authorization name server")
 
     def command_ls(self):
         system = platform.system()
