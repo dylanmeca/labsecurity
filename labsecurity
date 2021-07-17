@@ -61,6 +61,9 @@ def terminal():
                 elif prompt[1] == 'scanip':
                     print(Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                     use = prompt[1]
+                elif prompt[1] == 'scanns':
+                    print(Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
+                    use = prompt[1]
                 else:
                     print(Style.BRIGHT + Fore.RED +
                           "[*] ERROR, use the help command for more information")
@@ -84,6 +87,9 @@ def terminal():
                 elif use == 'scanip':
                     print(Style.BRIGHT + Fore.BLUE + "[*] Scanning ip...")
                     lab.scanip(target)
+                elif use == 'scanns':
+                    print(Style.BRIGHT + Fore.BLUE + "[*] Scanning NS from DNS...")
+                    lab.scanns(target)
                 else:
                     print(Style.BRIGHT + Fore.RED +
                           "[*] ERROR, use the help command for more information")
