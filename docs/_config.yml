@@ -1,6 +1,17 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: labsecurity
+logo: https://dylan14567.github.io/logo.ico
+description: labsecurity is a framework and its use is for ethical hacking and computer security
+show_downloads: false
+google_analytics: G-588R86TJDG
 theme: jekyll-theme-minimal
+url: "https://dylan14567.github.io/labsecurity"
+
+defaults:
+    scope:
+      path: "assets/**/*.pdf"
+    values:
+      sitemap: false
+
+plugins:
+ - jekyll-seo-tag
+ - jekyll-sitemap
