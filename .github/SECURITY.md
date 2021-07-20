@@ -12,4 +12,4 @@
 
 ## Report a vulnerability
 
-In case of error, in the scripts, inform us about the error in: [https://github.com/dylan14567/lab_tool/blob/main/.github/ISSUE_TEMPLATE/bug_report.md](https://github.com/dylan14567/lab_tool/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
+In case of error, in the scripts, inform us about the error in: [https://github.com/dylan14567/labsecurity/blob/main/.github/ISSUE_TEMPLATE/bug_report.md](https://github.com/dylan14567/labsecurity/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
