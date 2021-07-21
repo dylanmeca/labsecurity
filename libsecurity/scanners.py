@@ -6,6 +6,7 @@ import urllib.request
 import json
 import requests
 import dns.resolver
+from bs4 import BeautifulSoup
 from colorama import init, Fore, Style
 
 init(autoreset=True)
@@ -82,8 +83,7 @@ class scanner:
 
     def scanweb(self, link):
         try:
-            self.link = link
-            target = requests.get(url=self.link)
+            target = requests.get(url=link)
             header = dict(target.headers)
             for x in header:
                 print(x + " : "+header[x])
@@ -92,3 +92,20 @@ class scanner:
         except:
             print(Style.BRIGHT + Fore.RED +
                   "[*] Error, could not connect to server")
+
+    def getwpv (self, link):
+        try:
+            header = {'User-Agent' : 'Firefox'}
+            petition = requests.get (url=link, headers=header)
+            soup = BeautifulSoup(petition.text, 'html5lib')
+            for v in soup.find_all ('meta'):
+               if v.get('name') == 'generator'):
+                      version = v.get ('content')
+            
+            print (version)
+        except:
+            print (Style.BRIGHT + Fore.RED + "[*] Error, could not get wp version")
+       
+ 
+
+     
