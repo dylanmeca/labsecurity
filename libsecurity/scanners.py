@@ -81,20 +81,21 @@ class scanner:
 
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
-    def getwpv (self, link):
+    def getwpv(self, link):
         try:
             self.link = link
-            header = {'User-Agent' : 'Firefox'}
-            petition = requests.get (url=self.link, headers=header)
+            header = {'User-Agent': 'Firefox'}
+            petition = requests.get(url=self.link, headers=header)
             soup = BeautifulSoup(petition.text, 'html5lib')
-            for v in soup.find_all ('meta'):
-               if v.get('name') == 'generator':
-                      version = v.get ('content')
-            
-            print (version)
+            for v in soup.find_all('meta'):
+                if v.get('name') == 'generator':
+                    version = v.get('content')
+
+            print(version)
             print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
         except:
-            print (Style.BRIGHT + Fore.RED + "[*] Error, could not get wp version")
+            print(Style.BRIGHT + Fore.RED +
+                  "[*] Error, could not get wp version")
 
     def scanweb(self, link):
         try:
@@ -106,4 +107,5 @@ class scanner:
 
             print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
         except:
-            print(Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
+            print(Style.BRIGHT + Fore.RED +
+                  "[*] Error, could not connect to server")
