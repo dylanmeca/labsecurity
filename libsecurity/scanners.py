@@ -84,7 +84,7 @@ class scanner:
     def scanweb(self, link):
         try:
             self.link = link
-            target = requests.get(url=link)
+            target = requests.get(url=self.link)
             header = dict(target.headers)
             for x in header:
                 print(x + " : "+header[x])
