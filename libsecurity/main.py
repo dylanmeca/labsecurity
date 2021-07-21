@@ -28,6 +28,7 @@ class interpreter:
         print(Style.BRIGHT + Fore.GREEN + "use scanip => Geolocate an ip")
         print(Style.BRIGHT + Fore.GREEN +
               "scanns => Get authorization name server")
+        print(Style.BRIGHT + Fore.GREEN + "use getwpv => Get the WordPress version")
 
     def command_ls(self):
         system = platform.system()
