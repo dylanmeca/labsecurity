@@ -83,6 +83,7 @@ class scanner:
 
     def scanweb(self, link):
         try:
+            self.link = link
             target = requests.get(url=link)
             header = dict(target.headers)
             for x in header:
@@ -94,8 +95,9 @@ class scanner:
 
     def getwpv (self, link):
         try:
+            self.link = link
             header = {'User-Agent' : 'Firefox'}
-            petition = requests.get (url=link, headers=header)
+            petition = requests.get (url=self.link, headers=header)
             soup = BeautifulSoup(petition.text, 'html5lib')
             for v in soup.find_all ('meta'):
                if v.get('name') == 'generator'):
