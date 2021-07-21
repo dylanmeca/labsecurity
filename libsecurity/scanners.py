@@ -90,8 +90,7 @@ class scanner:
 
             print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
         except:
-            print(Style.BRIGHT + Fore.RED +
-                  "[*] Error, could not connect to server")
+            print(Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
 
     def getwpv (self, link):
         try:
@@ -105,7 +104,3 @@ class scanner:
             print (version)
         except:
             print (Style.BRIGHT + Fore.RED + "[*] Error, could not get wp version")
-       
- 
-
-     
