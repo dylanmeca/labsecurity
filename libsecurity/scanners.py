@@ -81,18 +81,6 @@ class scanner:
 
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
-    def scanweb(self, link):
-        try:
-            self.link = link
-            target = requests.get(url=self.link)
-            header = dict(target.headers)
-            for x in header:
-                print(x + " : "+header[x])
-
-            print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
-        except:
-            print(Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
-
     def getwpv (self, link):
         try:
             self.link = link
@@ -106,3 +94,15 @@ class scanner:
             print (version)
         except:
             print (Style.BRIGHT + Fore.RED + "[*] Error, could not get wp version")
+
+    def scanweb(self, link):
+        try:
+            self.link = link
+            target = requests.get(url=self.link)
+            header = dict(target.headers)
+            for x in header:
+                print(x + " : "+header[x])
+
+            print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
+        except:
+            print(Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
