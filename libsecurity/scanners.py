@@ -92,6 +92,7 @@ class scanner:
                       version = v.get ('content')
             
             print (version)
+            print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
         except:
             print (Style.BRIGHT + Fore.RED + "[*] Error, could not get wp version")
 
