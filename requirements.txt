@@ -2,4 +2,7 @@ colorama
 requests
 python-nmap
 dnspython
+beautifulsoup4
+lxml
+html5lib
 wheel
