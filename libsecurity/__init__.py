@@ -9,6 +9,7 @@ scanport = scanner.scanport
 scanip = scanner.scanip
 scanweb = scanner.scanweb
 scanns = scanner.scanns
+getwpv = scanner.getwpv
 
 help = interpreter.help
 command_ls = interpreter.command_ls
