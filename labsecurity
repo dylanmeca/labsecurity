@@ -64,6 +64,9 @@ def terminal():
                 elif prompt[1] == 'scanns':
                     print(Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                     use = prompt[1]
+                elif prompt[1] == 'getwpv':
+                    print(Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
+                    use = prompt[1]
                 else:
                     print(Style.BRIGHT + Fore.RED +
                           "[*] ERROR, use the help command for more information")
@@ -91,6 +94,9 @@ def terminal():
                     print(Style.BRIGHT + Fore.BLUE +
                           "[*] Scanning NS from DNS...")
                     lab.scanns(target)
+                elif use == 'getwpv':
+                    print(Style.BRIGHT + Fore.BLUE + "[*] Getting wp version...")
+                    lab.getwpv(target)
                 else:
                     print(Style.BRIGHT + Fore.RED +
                           "[*] ERROR, use the help command for more information")
