@@ -23,6 +23,9 @@ setuptools.setup(
         "wheel",
         "python-nmap",
         "dnspython",
+        "beautifulsoup4",
+        "lxml",
+        "html5lib",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
