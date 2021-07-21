@@ -95,7 +95,8 @@ def terminal():
                           "[*] Scanning NS from DNS...")
                     lab.scanns(target)
                 elif use == 'getwpv':
-                    print(Style.BRIGHT + Fore.BLUE + "[*] Getting wp version...")
+                    print(Style.BRIGHT + Fore.BLUE +
+                          "[*] Getting wp version...")
                     lab.getwpv(target)
                 else:
                     print(Style.BRIGHT + Fore.RED +
