@@ -6,7 +6,7 @@ Following these guidelines helps communicate that you are respecting the time of
 
 # How to report a bug
 
-Do you think you found a bug? Check [the list of open issues](https://github.com/dylan14567/labsecurity/issues) to see if your bug has already been reported. If not, send a new number.
+Do you think you found a bug? Check [the list of open issues](https://github.com/dylanmeca/labsecurity/issues) to see if your bug has already been reported. If not, send a new number.
 
 Here are some tips for writing great bug reports:
 
