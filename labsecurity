@@ -17,7 +17,7 @@ print("""
                                        /___/
 """)
 
-print("Homepage: https://github.com/dylan14567/labsecurity")
+print("Homepage: https://github.com/dylanmeca/labsecurity")
 print("Use the help command for more information about the commands")
 
 
