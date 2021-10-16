@@ -25,8 +25,8 @@ class scanner:
         results = nm.scan(self.ip, arguments="--top-ports 1000 -sT -n -Pn -T4")
         count = 0
         #print (results)
-        print("\nHost : {}".format(self.ip))
-        print("State : {}".format(nm[self.ip].state()))
+        print(f"\nHost : {self.ip}")
+        print(f"State : {nm[self.ip].state()}")
         for proto in nm[self.ip].all_protocols():
             print("Protocol : {}".format(proto))
             lport = nm[self.ip][proto].keys()
@@ -40,8 +40,7 @@ class scanner:
                 else:
                     ports_open = ports_open+","+str(port)
 
-        print(Style.BRIGHT + Fore.BLUE +
-              "\n[*] Ports Open: " + ports_open + " " + "Host: "+str(self.ip))
+        print(Style.BRIGHT + Fore.BLUE + "\n[*] Ports Open: " + ports_open + " " + "Host: "+str(self.ip))
         print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
 
     def scanport(self, ip, port):
@@ -49,8 +48,8 @@ class scanner:
         self.port = port
         nm = nmap.PortScanner()
         nm.scan(self.ip, self.port, arguments='-sV --version-intensity 3')
-        print("Protocols used: {}".format(nm[self.ip].all_protocols()))
-        print("Machine status: {}".format(nm[self.ip].state()))
+        print(f"Protocols used: {nm[self.ip].all_protocols()}")
+        print(f"Machine status: {nm[self.ip].state()}")
 
         for ports in nm[self.ip]['tcp'].keys():
             for data in nm[self.ip]['tcp'][ports]:
@@ -67,8 +66,7 @@ class scanner:
 
             print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
         except:
-            print(Style.BRIGHT + Fore.RED +
-                  "[*] Error, could not connect to server")
+            print(Style.BRIGHT + Fore.RED + "[*] Error, could not connect to server")
 
     def scanip(self, ip):
         self.ip = ip
@@ -94,8 +92,7 @@ class scanner:
             print(version)
             print(Style.BRIGHT + Fore.BLUE + "[*] Scan finished")
         except:
-            print(Style.BRIGHT + Fore.RED +
-                  "[*] Error, could not get wp version")
+            print(Style.BRIGHT + Fore.RED + "[*] Error, could not get wp version")
 
     def scanweb(self, link):
         try:
