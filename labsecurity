@@ -18,7 +18,8 @@ print("""
 """)
 
 print("Homepage: https://github.com/dylanmeca/labsecurity")
-print("Use the help command for more information about the commands")
+print("Use the help command to get information on the main commands")
+print("Use the show options command for more information about the commands")
 
 
 def terminal():
@@ -33,6 +34,8 @@ def terminal():
                 os.system("cd")
             elif prompt[0] == 'help':
                 lab.help()
+            elif prompt[0] == 'show' and prompt[1] == 'options':
+                lab.show_options()
             elif prompt[0] == 'set':
                 # Here is the part where the selections are put
                 if prompt[1] == 'target':
@@ -44,8 +47,7 @@ def terminal():
                     print(Style.BRIGHT + Fore.GREEN + "port =>", prompt[2])
                     port = prompt[2]
                 else:
-                    print(Style.BRIGHT + Fore.RED +
-                          "[*] ERROR, use the help command for more information")
+                    print(Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
             elif prompt[0] == 'use':
                 global use
                 # Here is the part where one of the following categories is used
@@ -68,10 +70,10 @@ def terminal():
                     print(Style.BRIGHT + Fore.GREEN + "use =>", prompt[1])
                     use = prompt[1]
                 else:
-                    print(Style.BRIGHT + Fore.RED +
-                          "[*] ERROR, use the help command for more information")
+                    print(Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
             elif prompt[0] == 'clear':
-                os.system("clear")
+                command = lab.command_clear()
+                os.system(command)
             elif prompt[0] == 'ls':
                 command = lab.command_ls()
                 os.system(command)
@@ -91,44 +93,33 @@ def terminal():
                     print(Style.BRIGHT + Fore.BLUE + "[*] Scanning ip...")
                     lab.scanip(target)
                 elif use == 'scanns':
-                    print(Style.BRIGHT + Fore.BLUE +
-                          "[*] Scanning NS from DNS...")
+                    print(Style.BRIGHT + Fore.BLUE + "[*] Scanning NS from DNS...")
                     lab.scanns(target)
                 elif use == 'getwpv':
-                    print(Style.BRIGHT + Fore.BLUE +
-                          "[*] Getting wp version...")
+                    print(Style.BRIGHT + Fore.BLUE + "[*] Getting wp version...")
                     lab.getwpv(target)
                 else:
-                    print(Style.BRIGHT + Fore.RED +
-                          "[*] ERROR, use the help command for more information")
+                    print(Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
             else:
-                print(Style.BRIGHT + Fore.RED +
-                      "[*] ERROR, use the help command for more information")
+                print(Style.BRIGHT + Fore.RED + "[*] ERROR, use the help command for more information")
 
         except ValueError:
-            print(Style.BRIGHT + Fore.RED +
-                  "[*] Error, there is a type of error.")
+            print(Style.BRIGHT + Fore.RED + "[*] Error, there is a type of error.")
             sys.exit()
         except KeyboardInterrupt:
             print(Style.BRIGHT + Fore.BLUE + "[*] Exiting...")
             sys.exit()
         except NameError:
-            print(Style.BRIGHT + Fore.RED +
-                  "[*] Error, the command I use is not defined in the program code.")
+            print(Style.BRIGHT + Fore.RED + "[*] Error, the command I use is not defined in the program code.")
             sys.exit()
         except SyntaxError:
-            print(Style.BRIGHT + Fore.RED +
-                  "[*] Error, the code has a syntax error.")
+            print(Style.BRIGHT + Fore.RED + "[*] Error, the code has a syntax error.")
             sys.exit()
         except TypeError:
-            print(Style.BRIGHT + Fore.RED +
-                  "[*] Error, the code is misspelled.")
+            print(Style.BRIGHT + Fore.RED + "[*] Error, the code is misspelled.")
             sys.exit()
         except IndexError:
-            print(Style.BRIGHT + Fore.RED +
-                  "[*] Error, the command you used is incomplete.")
-            sys.exit()
-
+            print(Style.BRIGHT + Fore.RED + "[*] Error, the command you used is incomplete.")
 
 if __name__ == '__main__':
     terminal()

@@ -11,25 +11,10 @@ class interpreter:
         return
 
     def help(self):
-        print(Style.BRIGHT + Fore.GREEN +
-              "set target => register the target in the system")
-        print(Style.BRIGHT + Fore.GREEN +
-              "use scanweb => Use a script that extracts information from a website")
-        print(Style.BRIGHT + Fore.GREEN +
-              "run or exploit => The run and exploit command is to start the system")
-        print(Style.BRIGHT + Fore.GREEN +
-              "exit or quit => Is to exit the system ")
-        print(Style.BRIGHT + Fore.GREEN +
-              "use scanports => Scan all the ports of an IP")
-        print(Style.BRIGHT + Fore.GREEN +
-              "use scanport => Scan the port of an ip")
-        print(Style.BRIGHT + Fore.GREEN +
-              "set port => register the port in the system")
-        print(Style.BRIGHT + Fore.GREEN + "use scanip => Geolocate an ip")
-        print(Style.BRIGHT + Fore.GREEN +
-              "scanns => Get authorization name server")
-        print(Style.BRIGHT + Fore.GREEN +
-              "use getwpv => Get the WordPress version")
+        print(Style.BRIGHT + Fore.GREEN + """
+        show options => Show system options
+        exit or quit => Is to exit the system 
+        """)
 
     def command_ls(self):
         system = platform.system()
@@ -39,3 +24,25 @@ class interpreter:
             return 'ls'
         else:
             return
+
+    def command_clear(self):
+        system = platform.system()
+        if system == 'Windows':
+            return 'cls'
+        elif system == 'Linux':
+            return 'clear'
+        else:
+            return
+
+    def show_options(self):
+          print(Style.BRIGHT + Fore.GREEN + """
+          set target => register the target in the system
+          use scanweb => Use a script that extracts information from a website
+          run or exploit => The run and exploit command is to start the system
+          use scanports => Scan all the ports of an IP
+          use scanport => Scan the port of an ip
+          set port => register the port in the system
+          use scanip => Geolocate an ip
+          scanns => Get authorization name server
+          use getwpv => Get the WordPress version
+          """)

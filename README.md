@@ -17,11 +17,19 @@ If you use this tool for other purposes except education we will not be responsi
 
 As the developer of the labsecurity software, I am not responsible if you use this software for illegal purposes this software was created in order to find vulnerabilities within a specific system or software both common server or a pc, to report it and try to improve the software and that way that vulnerability will not exist, this software is also used for educational purposes with which to teach how a hacker accesses information that he should not have, and how to prevent it.
 
+## What can labsecurity do
+
+* You can get the information from the headers of a website
+* You can get the WordPress version although researching also finds the Jekyll version
+* You can scan a public ip
+* Can scan ports using nmap
+* It can do a lot of cool things
+
 ## Pre-requirements
 
 The requirements to use the system is to have the following python modules installed:
 
-```
+```text
 colorama
 requests
 python-nmap
@@ -52,33 +60,17 @@ Ready
 
 To use the labsecurity command you just have to put the ```labsecurity``` command, and once that is done the system console will be loaded.
 
-Inside the lab tool console place the ``` help ``` command to know more information about how to use the system.
+To obtain information on the commands, you can execute the ```help``` command within the console to obtain information on the main commands. And you can use the ```show options``` command to get information from the other commands.
 
 ## Documentation
 
 The project documentation is in: [https://dylanmeca.github.io/labsecurity](https://dylanmeca.github.io/labsecurity)
-
-## Vulnerability Disclosure Policy
-
-As a developer of security software, services, and research, we take security concerns very seriously and recognize the importance of privacy, security, and community outreach. 
-
-As such, we are committed to addressing and reporting security issues through a coordinated and constructive approach designed to drive the greatest protection for technology users through this software.
-
-A software developer or just a security enthusiast, you are an important part of this process.
 
 ## Authors
 
 * **Dylan Meca** - *Initial Work* - [dylanmeca](https://github.com/dylanmeca)
 
 You can also look at the list of all [contributors](https://github.com/dylanmeca/labsecurity/contributors) who have participated in this project.
-
-## Property
-
-You cannot declare labsecurity intellectual or exclusive property, modified or unmodified.
-
-All products are the property of the content providers.
-
-Unless otherwise specified, our products are provided without warranty of any kind, express or implied. In no way will this company be liable for any damages including, but not limited to, direct, indirect, special, incidental or consequential damages or other losses resulting from the use or inability to use our products.
 
 ## Contributing
 
@@ -87,4 +79,3 @@ Please read [CONTRIBUTING.md](https://github.com/dylanmeca/labsecurity/blob/main
 ## License
 
 The license for this project is [MIT](https://github.com/dylanmeca/labsecurity/blob/main/LICENSE)
-
