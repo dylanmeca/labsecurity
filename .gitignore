@@ -129,7 +129,6 @@ dmypy.json
 .pyre/
 
 # Jekyll Page
-
 _site
 .sass-cache
 Gemfile.lock
