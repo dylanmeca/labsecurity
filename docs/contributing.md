@@ -2,8 +2,6 @@
 layout: page
 ---
 
-# Contributing
-
 Hello! We are delighted that you want to contribute to the labsecurity project. Your help is essential to keep it great.
 
 Following these guidelines helps communicate that you are respecting the time of the developers who manage and develop this open source project. In return, they should reciprocate that respect by addressing your issue, evaluating the changes, and helping you finalize your pull requests.
