@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Contributing
 
 Hello! We are delighted that you want to contribute to the labsecurity project. Your help is essential to keep it great.
