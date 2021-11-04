@@ -1,0 +1,38 @@
+title: labsecurity
+description: labsecurity is a framework and its use is for ethical hacking and computer security
+author:
+  name: Dylan Meca
+  email: 
+show_downloads: false
+google_analytics: UA-210931278-2
+comments: true
+show_excerpts: false
+
+minima:
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: meca_dylan
+    github: dylanmeca
+    youtube_channel: UCSUN3qthUfkVO2OwnJh3HQg
+    instagram: dylanmeca
+
+remote_theme: "dylanmeca/dylanmeca.github.io@1.2"
+
+disqus:
+  shortname: dylan14567
+
+url: "https://dylanmeca.github.io/labsecurity"
+paginate: 10
+paginate_path: "/page:num/"
+
+defaults:
+    scope:
+      path: "assets/**/*.pdf"
+    values:
+      sitemap: false
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-sitemap
