@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
 ![logo](https://raw.githubusercontent.com/dylanmeca/labsecurity/main/.github/icon.jpg)
 
-labsecurity is a framework and its use is for ethical hacking and computer security.
+labsecurity is a tool that brings together python scripts made for ethical hacking, in a single tool, through a console interface.
 
 # Warning
 
