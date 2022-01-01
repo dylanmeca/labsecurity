@@ -11,11 +11,11 @@ labsecurity is a tool that brings together python scripts made for ethical hacki
 
 # Warning
 
-This tool is only for educational purpose.
+This software was created for educational purposes, where it is shown how a hacker would access certain information and how to prevent it from happening.
 
-If you use this tool for other purposes except education we will not be responsible.
+As a labsecurity software developer I will not be held responsible if you use this software for illegal purposes. 
 
-As the developer of the labsecurity software, I am not responsible if you use this software for illegal purposes this software was created in order to find vulnerabilities within a specific system or software both common server or a pc, to report it and try to improve the software and that way that vulnerability will not exist, this software is also used for educational purposes with which to teach how a hacker accesses information that he should not have, and how to prevent it.
+This software was created for ethical hacking and educational purposes.
 
 ## What can labsecurity do
 
