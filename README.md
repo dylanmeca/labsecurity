@@ -64,7 +64,7 @@ To obtain information on the commands, you can execute the ```help``` command wi
 
 ## Documentation
 
-The project documentation is in: [https://dylanmeca.github.io/labsecurity](https://dylanmeca.github.io/labsecurity)
+The project documentation is in: [https://dylanmeca.github.io/labsecurity-documentation](https://dylanmeca.github.io/labsecurity-documentation)
 
 ## Authors
 
