@@ -16,7 +16,7 @@ To install and use labsecurity, follow these steps:
 2. Download or clone this repository to your computer.
 3. Open a terminal and access the repository directory.
 4. Run the following command to install the necessary dependencies: ```pip3 install -r requirements.txt```
-5. Run the following command to start the chatbot: ```python3 labsecurity.py --help ```
+5. Run the following command to start labsecurity: ```python3 labsecurity.py --help ```
 
 ```txt
 usage: labsecurity.py [-h] -t TARGET [-p PORT] script_name
