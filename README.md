@@ -33,7 +33,7 @@ optional arguments:
   -p PORT, --port PORT  Port to user
 ```
 
-## Use
+## 📚 Use
 
 To use this tool you must learn the following concept:
 
