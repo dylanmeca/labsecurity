@@ -8,8 +8,14 @@
 
 Labsecurity is a tool that bundles ethical hacking python scripts into a single tool with cli interface.
 
-## ⚠️ Warning 
-This software was created for cybersecurity purposes. We are not responsible if you use this tool for illegal purposes.
+## ⬇️ Installation
+To install and use labsecurity, follow these steps:
+
+1. Make sure you have installed [Python](https://www.python.org/) in your system.
+2. Download or clone this repository to your computer.
+3. Open a terminal and access the repository directory.
+4. Run the following command to install the necessary dependencies: ```pip3 install -r requirements.txt```
+5. Run the following command to start the chatbot: ```python3 labsecurity.py --help ```
 
 ## 💻 What can labsecurity do?
 Some examples of what this tool can do are:
