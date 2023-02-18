@@ -17,6 +17,21 @@ To install and use labsecurity, follow these steps:
 4. Run the following command to install the necessary dependencies: ```pip3 install -r requirements.txt```
 5. Run the following command to start the chatbot: ```python3 labsecurity.py --help ```
 
+```txt
+usage: labsecurity.py [-h] -t TARGET [-p PORT] script_name
+
+Labsecurity is a tool that bundles ethical hacking python scripts into a single tool with cli interface.
+
+positional arguments:
+  script_name           Script name to be executed
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t TARGET, --target TARGET
+                        Objective to use
+  -p PORT, --port PORT  Port to user
+```
+
 ## 💻 What can labsecurity do?
 Some examples of what this tool can do are:
 
@@ -41,4 +56,3 @@ For more information about the license, see the [LICENSE](https://github.com/dyl
 
 ## 🧾 Credits
 This project has been developed by [Dylan Meca](https://github.com/dylanmeca) and contributions from [users](https://github.com/dylanmeca/labsecurity/contributors).
-
