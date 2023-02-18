@@ -6,7 +6,7 @@
 [![security_policy](https://img.shields.io/badge/security-policy-cyan.svg)](https://github.com/meca/labsecurity/blob/main/.github/SECURITY.md)
 [![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
 
-Labsecurity is a tool that bundles ethical hacking python scripts into one tool.
+Labsecurity is a tool that bundles ethical hacking python scripts into a single tool with cli interface.
 
 ## ⚠️ Warning 🚨 
 This software was created for cybersecurity purposes. We are not responsible if you use this tool for illegal purposes.
