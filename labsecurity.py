@@ -4,7 +4,7 @@ import os
 
 # We create an ArgumentParser object to define the command line arguments.
 parser = argparse.ArgumentParser(description='Labsecurity is a tool that bundles ethical hacking python scripts into a single tool with cli interface.')
-parser.add_argument('-t', '--target', help='Objective to use', required=True)
+parser.add_argument('-t', '--target', help='Objective to use', required=False)
 parser.add_argument('-p', '--port', help='Port to user', required=False)
 parser.add_argument('script_name', help='Script name to be executed')
 
@@ -26,3 +26,7 @@ if args.target and args.port:
     script_module.run(args.target, args.port)
 elif args.target:
     script_module.run(args.target)
+elif args.script_name:
+    script_module.run()
+else:
+    print("An error occurred, missing arguments")
