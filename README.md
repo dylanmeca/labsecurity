@@ -38,7 +38,7 @@ optional arguments:
 To use this tool you must learn the following concept:
 
 ```shell
-python3 labsecurity -t http://example.com scanweb.py
+python3 labsecurity.py -t http://example.com scanweb.py
 ```
  
 By using the ```-t``` parameter I specify the target which in this case is ```http://example.com``` and by putting ```scanweb.py``` at the end I specify the script to be executed. The scripts are located in the ```/scripts``` folder and can be used in the tool.
@@ -46,10 +46,16 @@ By using the ```-t``` parameter I specify the target which in this case is ```ht
 Another example would be using another script that in this case will be ```scanport.py```:
 
 ```shell
-python3 labsecurity -t 192.168.0.107 -p 80 scanport.py
+python3 labsecurity.py -t 192.168.0.107 -p 80 scanport.py
 ```
 
 In this case, apart from the ```-t``` parameter, the ```-p``` parameter is added to specify the port and at the end the ```scanport.py``` script is used to scan said port.
+
+You can see the available scripts and their function with the following command:
+
+```shell
+python3 labsecurity.py show-options.py
+```
 
 ## 💻 What can labsecurity do?
 Some examples of what this tool can do are:
