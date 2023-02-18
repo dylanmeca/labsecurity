@@ -6,3 +6,4 @@ beautifulsoup4
 lxml
 html5lib
 wheel
+argparse
