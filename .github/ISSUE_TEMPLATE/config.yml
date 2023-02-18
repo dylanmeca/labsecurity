@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: dylan meca contact
-    url: https://github.com/dylanmeca/labsecurity/blob/main/.github/ISSUE_TEMPLATE/bug_report.md
-    about: Please contact me in case of error in the repository.
-  - name: dylan meca security
-    url: https://github.com/dylanmeca/labsecurity/blob/main/.github/ISSUE_TEMPLATE/bug_report.md
-    about: Please report security vulnerabilities here.
