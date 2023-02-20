@@ -9,6 +9,9 @@
 
 Labsecurity is a tool that bundles ethical hacking python scripts into a single tool with cli interface.
 
+## ⚠️ Warning
+This project was created for educational and ethical hacking purposes. It should not be used in environments without legal authorization.
+
 ## ⬇️ Installation
 To install and use labsecurity, follow these steps:
 
