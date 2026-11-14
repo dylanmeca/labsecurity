@@ -1,0 +1,35 @@
+{
+  "id": "auxiliary/scanner/scanports",
+  "description": "TCP port range scanner with bounded concurrency",
+  "version": "2.0.0",
+  "author": "Labsecurity (adapted from original scripts by Dylan Meca)",
+  "entrypoint": "plugin.py:run",
+  "options": [
+    {
+      "name": "RHOSTS",
+      "type": "string",
+      "required": true,
+      "description": "Authorized target host or IP address"
+    },
+    {
+      "name": "PORTS",
+      "type": "string",
+      "default": "1-1024",
+      "required": true,
+      "description": "Comma-separated ports/ranges (maximum 2048)"
+    },
+    {
+      "name": "TIMEOUT",
+      "type": "integer",
+      "default": 3,
+      "description": "Connection timeout in seconds"
+    },
+    {
+      "name": "THREADS",
+      "type": "integer",
+      "default": 32,
+      "description": "Workers (1-64)"
+    }
+  ],
+  "commands": []
+}

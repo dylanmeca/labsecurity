@@ -1,0 +1,22 @@
+{
+  "id": "auxiliary/dns/scanns",
+  "description": "Look up authoritative name servers (NS records)",
+  "version": "2.0.0",
+  "author": "Labsecurity (adapted from original scripts by Dylan Meca)",
+  "entrypoint": "plugin.py:run",
+  "options": [
+    {
+      "name": "DOMAIN",
+      "type": "string",
+      "required": true,
+      "description": "Domain name to query"
+    },
+    {
+      "name": "TIMEOUT",
+      "type": "integer",
+      "default": 3,
+      "description": "Connection timeout in seconds"
+    }
+  ],
+  "commands": []
+}

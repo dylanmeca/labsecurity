@@ -1,74 +1,64 @@
-# 🛡️ Labsecurity 🐍
-[![Build Status](https://img.shields.io/github/stars/dylanmeca/labsecurity.svg)](https://github.com/dylanmeca/labsecurity)
+# LABSECURITY 2.0
+[![Starts](https://img.shields.io/github/stars/dylanmeca/labsecurity.svg)](https://github.com/dylanmeca/labsecurity)
 [![License](https://img.shields.io/github/license/dylanmeca/labsecurity.svg)](https://github.com/dylanmeca/labsecurity/blob/main/LICENSE)
-[![dylanmeca](https://img.shields.io/badge/author-dylanmeca-green.svg)](https://github.com/dylanmeca)
-[![bug_report](https://img.shields.io/badge/bug-report-red.svg)](https://github.com/dylanmeca/labsecurity/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
-[![security_policy](https://img.shields.io/badge/security-policy-cyan.svg)](https://github.com/meca/labsecurity/blob/main/.github/SECURITY.md)
-[![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
-![labsecurity](https://github.com/dylanmeca/labsecurity/raw/main/presentation.png)
 
-Labsecurity is a tool that bundles ethical hacking python scripts into a single tool with cli interface.
+Labsecurity is a pentesting framework that brings together tools and allows users to create, manage, and run hacking scripts from a single platform, facilitating the automation of cybersecurity testing.
 
-## ⚠️ Warning
-This project was created for educational and ethical hacking purposes. It should not be used in environments without legal authorization.
+## Requisitos
 
-## ⬇️ Installation
+- Python **3.10 or later**.
+- For Nmap plugins, install **Nmap** (the system executable) and `python-nmap`. These are not required to start the console or to perform a simple scan using sockets.
+
+### ⬇️ Installation
 To install and use labsecurity, follow these steps:
 
 1. Make sure you have installed [Python](https://www.python.org/) in your system.
 2. Download or clone this repository to your computer.
 3. Open a terminal and access the repository directory.
 4. Run the following command to install the necessary dependencies: ```pip3 install -r requirements.txt```
-5. Run the following command to start labsecurity: ```python3 labsecurity.py --help ```
+5. Run the following command to start labsecurity: ```python3 labsecurity.py```
 
-```txt
-usage: labsecurity.py [-h] -t TARGET [-p PORT] script_name
-
-Labsecurity is a tool that bundles ethical hacking python scripts into a single tool with cli interface.
-
-positional arguments:
-  script_name           Script name to be executed
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -t TARGET, --target TARGET
-                        Objective to use
-  -p PORT, --port PORT  Port to user
+```text
+labsecurity > help
+labsecurity > search scanport
+labsecurity > use auxiliary/scanner/scanport
+labsecurity (auxiliary/scanner/scanport) > show options
+labsecurity (auxiliary/scanner/scanport) > set RHOSTS 127.0.0.1
+labsecurity (auxiliary/scanner/scanport) > set RPORT 8000
+labsecurity (auxiliary/scanner/scanport) > run
+labsecurity (auxiliary/scanner/scanport) > back
+labsecurity > exit
 ```
 
-## 📚 Use
+## Create Your Own Plugin
 
-To use this tool you must learn the following concept:
+From the console:
 
-```shell
-python3 labsecurity.py -t http://example.com scanweb.py
-```
- 
-By using the ```-t``` parameter I specify the target which in this case is ```http://example.com``` and by putting ```scanweb.py``` at the end I specify the script to be executed. The scripts are located in the ```/scripts``` folder and can be used in the tool.
-
-Another example would be using another script that in this case will be ```scanport.py```:
-
-```shell
-python3 labsecurity.py -t 192.168.0.107 -p 80 scanport.py
+```text
+labsecurity > plugin create my_tool
+[+] Plugin scaffold generated: plugins/auxiliary/custom/my_tool
 ```
 
-In this case, apart from the ```-t``` parameter, the ```-p``` parameter is added to specify the port and at the end the ```scanport.py``` script is used to scan said port.
+You can also specify the type and category:
 
-You can see the available scripts and their function with the following command:
-
-```shell
-python3 labsecurity.py show-options.py
+```text
+labsecurity > plugin create port_check auxiliary scanner
 ```
 
-## 💻 What can labsecurity do?
-Some examples of what this tool can do are:
+The generator creates the package with:
 
-* You can get the information from the headers of a website
-* You can get the WordPress version although by investigating you can also find the Jekyll version
-* You can scan a public ip
-* Can scan ports using nmap
+```text
+plugins/auxiliary/custom/my_tool/
+  __init__.py
+  manifest.json
+  plugin.py
+```
 
-## 👷 Contributions
+Open `plugin.py` and replace the `TODO` comment with your logic in the `run(ctx)` function. Adjust the manifest options and run `reload` if you were already using the console. Discovery occurs **without executing the plugin’s code**; loading takes place when you call `run` or a command added by a plugin.
+
+**Basic API:** `ctx.get(“TARGET”)`, `ctx.info(“...”)`, `ctx.success(“...”)`, `ctx.warning(“...”)`, `ctx.error(“...”)`, and `ctx.print(“...”)`. Options can be of type `string`, `integer`, `port`, `boolean`, `url`, or `choice`; `required`, `default`, and `description` are configurable.
+
+## Contributions
 This project is open source and we are open to any kind of contribution. If you want to collaborate with the project, follow these steps:
 
 - Fork this repository.
@@ -77,10 +67,6 @@ This project is open source and we are open to any kind of contribution. If you 
 
 Be sure to include a detailed description of your contribution and to follow our code standards.
 
-## 📜 License
-This project is released under the [MIT](https://github.com/dylanmeca/labsecurity/blob/main/LICENSE) license. This means that the code and documentation in this project are free to use, modify, and distribute as long as you respect the license terms.
-
-For more information about the license, see the [LICENSE](https://github.com/dylanmeca/labsecurity/blob/main/LICENSE) file included in this repository.
-
-## 🧾 Credits
+## Credits
 This project has been developed by [Dylan Meca](https://github.com/dylanmeca) and contributions from [users](https://github.com/dylanmeca/labsecurity/contributors).
+

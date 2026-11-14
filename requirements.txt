@@ -1,9 +1,6 @@
-colorama
-requests
-python-nmap
-dnspython
-beautifulsoup4
-lxml
-html5lib
-wheel
-argparse
+rich>=13.7,<16
+prompt_toolkit>=3.0.43,<4
+requests>=2.31,<3
+dnspython>=2.5,<3
+beautifulsoup4>=4.12,<5
+python-nmap>=0.7.1,<1

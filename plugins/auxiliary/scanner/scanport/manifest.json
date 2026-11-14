@@ -1,0 +1,38 @@
+{
+  "id": "auxiliary/scanner/scanport",
+  "description": "TCP single-port scan (optional Nmap service detection)",
+  "version": "2.0.0",
+  "author": "Labsecurity (adapted from original scripts by Dylan Meca)",
+  "entrypoint": "plugin.py:run",
+  "options": [
+    {
+      "name": "RHOSTS",
+      "type": "string",
+      "required": true,
+      "description": "Authorized target host or IP address"
+    },
+    {
+      "name": "RPORT",
+      "type": "port",
+      "required": true,
+      "description": "TCP port to connect to"
+    },
+    {
+      "name": "TIMEOUT",
+      "type": "integer",
+      "default": 3,
+      "description": "Connection timeout in seconds"
+    },
+    {
+      "name": "BACKEND",
+      "type": "choice",
+      "choices": [
+        "socket",
+        "nmap"
+      ],
+      "default": "socket",
+      "description": "socket (default) or nmap (service detection)"
+    }
+  ],
+  "commands": []
+}

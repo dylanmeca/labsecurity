@@ -1,0 +1,22 @@
+{
+  "id": "auxiliary/web/getwpv",
+  "description": "Identify a WordPress version via public HTML generator metadata",
+  "version": "2.0.0",
+  "author": "Labsecurity (adapted from original scripts by Dylan Meca)",
+  "entrypoint": "plugin.py:run",
+  "options": [
+    {
+      "name": "URL",
+      "type": "url",
+      "required": true,
+      "description": "Website URL, including http(s)://"
+    },
+    {
+      "name": "TIMEOUT",
+      "type": "integer",
+      "default": 3,
+      "description": "Connection timeout in seconds"
+    }
+  ],
+  "commands": []
+}

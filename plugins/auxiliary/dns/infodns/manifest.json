@@ -1,0 +1,28 @@
+{
+  "id": "auxiliary/dns/infodns",
+  "description": "Query common DNS record types for a domain",
+  "version": "2.0.0",
+  "author": "Labsecurity (adapted from original scripts by Dylan Meca)",
+  "entrypoint": "plugin.py:run",
+  "options": [
+    {
+      "name": "DOMAIN",
+      "type": "string",
+      "required": true,
+      "description": "Domain name to query"
+    },
+    {
+      "name": "TIMEOUT",
+      "type": "integer",
+      "default": 3,
+      "description": "Connection timeout in seconds"
+    },
+    {
+      "name": "TYPES",
+      "type": "string",
+      "default": "A,AAAA,NS,SOA,MX,TXT",
+      "description": "Comma separated DNS record types"
+    }
+  ],
+  "commands": []
+}

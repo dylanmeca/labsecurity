@@ -1,0 +1,22 @@
+{
+  "id": "auxiliary/recon/scanip",
+  "description": "Look up public IP information via the third-party ipinfo.io API",
+  "version": "2.0.0",
+  "author": "Labsecurity (adapted from original scripts by Dylan Meca)",
+  "entrypoint": "plugin.py:run",
+  "options": [
+    {
+      "name": "IP",
+      "type": "string",
+      "required": true,
+      "description": "IPv4 or IPv6 address"
+    },
+    {
+      "name": "TIMEOUT",
+      "type": "integer",
+      "default": 3,
+      "description": "Connection timeout in seconds"
+    }
+  ],
+  "commands": []
+}

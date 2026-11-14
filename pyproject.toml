@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "labsecurity-framework"
+version = "2.0.0"
+description = "Labsecurity is a pentesting framework that brings together tools and allows users to create, manage, and run hacking scripts from a single platform, facilitating the automation of cybersecurity testing."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Dylan Meca"}]
+dependencies = ["rich>=13.7,<16", "prompt_toolkit>=3.0.43,<4", "requests>=2.31,<3", "dnspython>=2.5,<3", "beautifulsoup4>=4.12,<5"]
+
+[project.optional-dependencies]
+nmap = ["python-nmap>=0.7.1,<1"]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["labsecurity_core"]

@@ -1,0 +1,22 @@
+{
+  "id": "auxiliary/recon/server_domain",
+  "description": "Find potential domains co-hosted on a server (third-party ViewDNS)",
+  "version": "2.0.0",
+  "author": "Labsecurity (adapted from original scripts by Dylan Meca)",
+  "entrypoint": "plugin.py:run",
+  "options": [
+    {
+      "name": "IP",
+      "type": "string",
+      "required": true,
+      "description": "Server IP for public reverse IP lookup"
+    },
+    {
+      "name": "TIMEOUT",
+      "type": "integer",
+      "default": 3,
+      "description": "Connection timeout in seconds"
+    }
+  ],
+  "commands": []
+}

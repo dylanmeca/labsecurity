@@ -1,0 +1,1 @@
+"""Labsecurity plugin package."""

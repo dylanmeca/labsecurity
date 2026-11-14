@@ -1,0 +1,15 @@
+{
+  "id": "custom/developer/diagnostics",
+  "description": "Built-in example of a plugin-defined console command",
+  "version": "2.0.0",
+  "author": "Labsecurity (adapted from original scripts by Dylan Meca)",
+  "entrypoint": "plugin.py:run",
+  "options": [],
+  "commands": [
+    {
+      "name": "doctor",
+      "description": "Show runtime and plugin system information",
+      "entrypoint": "plugin.py:doctor"
+    }
+  ]
+}
