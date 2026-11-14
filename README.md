@@ -4,7 +4,7 @@
 
 Labsecurity is a pentesting framework that brings together tools and allows users to create, manage, and run hacking scripts from a single platform, facilitating the automation of cybersecurity testing.
 
-## 📚 Requisitos
+## 📚 Requirements
 
 - Python **3.10 or later**.
 - For Nmap plugins, install **Nmap** (the system executable) and `python-nmap`. These are not required to start the console or to perform a simple scan using sockets.
