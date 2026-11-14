@@ -1,9 +1,10 @@
 # LABSECURITY 2.0
 [![Starts](https://img.shields.io/github/stars/dylanmeca/labsecurity.svg)](https://github.com/dylanmeca/labsecurity)
 [![License](https://img.shields.io/github/license/dylanmeca/labsecurity.svg)](https://github.com/dylanmeca/labsecurity/blob/main/LICENSE)
-![labsecurity](https://github.com/dylanmeca/labsecurity/raw/main/docs/presentation.png)
 
 Labsecurity is a pentesting framework that brings together tools and allows users to create, manage, and run hacking scripts from a single platform, facilitating the automation of cybersecurity testing.
+
+![labsecurity](https://github.com/dylanmeca/labsecurity/raw/main/docs/presentation.png)
 
 ## 📚 Requirements
 
