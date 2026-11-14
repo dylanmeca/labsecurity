@@ -4,7 +4,7 @@
 
 Labsecurity is a pentesting framework that brings together tools and allows users to create, manage, and run hacking scripts from a single platform, facilitating the automation of cybersecurity testing.
 
-## Requisitos
+## 📚 Requisitos
 
 - Python **3.10 or later**.
 - For Nmap plugins, install **Nmap** (the system executable) and `python-nmap`. These are not required to start the console or to perform a simple scan using sockets.
@@ -30,7 +30,7 @@ labsecurity (auxiliary/scanner/scanport) > back
 labsecurity > exit
 ```
 
-## Create Your Own Plugin
+## 🔧 Create Your Own Plugin
 
 From the console:
 
@@ -58,7 +58,7 @@ Open `plugin.py` and replace the `TODO` comment with your logic in the `run(ctx)
 
 **Basic API:** `ctx.get(“TARGET”)`, `ctx.info(“...”)`, `ctx.success(“...”)`, `ctx.warning(“...”)`, `ctx.error(“...”)`, and `ctx.print(“...”)`. Options can be of type `string`, `integer`, `port`, `boolean`, `url`, or `choice`; `required`, `default`, and `description` are configurable.
 
-## Contributions
+## 👷 Contributions
 This project is open source and we are open to any kind of contribution. If you want to collaborate with the project, follow these steps:
 
 - Fork this repository.
@@ -67,6 +67,5 @@ This project is open source and we are open to any kind of contribution. If you 
 
 Be sure to include a detailed description of your contribution and to follow our code standards.
 
-## Credits
+## 🧾 Credits
 This project has been developed by [Dylan Meca](https://github.com/dylanmeca) and contributions from [users](https://github.com/dylanmeca/labsecurity/contributors).
-
